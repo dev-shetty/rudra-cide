@@ -1,9 +1,6 @@
 
 import string, praw, time
-# from config import REDDIT_API_CLIENT, REDDIT_API_SECRET
-
-REDDIT_API_SECRET = "ebzQ-2SQfmdtpetKI6mvHGxdRdnZ7w"
-REDDIT_API_CLIENT = "uncXIpkUVmB1BAJopPcKWQ"
+from config import REDDIT_API_CLIENT, REDDIT_API_SECRET
 
 class Alias:
     def __init__(self):
