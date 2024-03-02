@@ -1,14 +1,17 @@
-# License: GNU General Public License v3.0
 
-import requests
-from fastapi import APIRouter, Request, UploadFile, File, Depends
+import json
+from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse, Response
+
+from workers.nmap import nmap_onion_scan
 
 router = APIRouter()
 
 @router.post("/")
 async def model(req: Request, res: Response):
     try:
-        return JSONResponse({ "success": True })
+        req = json.loads(req.body)
+        result = await nmap_onion_scan(req.url)
+        return JSONResponse(result)
     except Exception as e:
         return JSONResponse({ "success": False, "message": f"Error: {e}"})

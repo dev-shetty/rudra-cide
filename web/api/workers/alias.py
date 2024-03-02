@@ -41,6 +41,6 @@ class Alias:
 
 
 
-alias = Alias()
+# alias = Alias()
 
-print(alias.check_redit("Hi", "rudra"))
+# print(alias.check_redit("Hi", "rudra"))

@@ -12,6 +12,8 @@ import json
 from config import *
 import router.auth_router as auth_router
 import router.crawl_router as crawl_router
+import router.image_router as image_router
+import router.alias_router as alias_router
 
 app = FastAPI(
     title="Rudra-CIDE",
@@ -25,13 +27,13 @@ app = FastAPI(
     redoc_url="/",
 )
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 
 
@@ -41,7 +43,9 @@ async def home():
 
 
 app.include_router(auth_router.router, prefix="/api/v1/auth")
-app.include_router(crawl_router.router)
+app.include_router(crawl_router.router, prefix="/api/v1/crawl")
+app.include_router(image_router.router, prefix="/api/v1/image")
+app.include_router(alias_router.router, prefix="/api/v1/alias")
 
 
 if __name__ == "__main__":

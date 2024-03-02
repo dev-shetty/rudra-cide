@@ -67,12 +67,12 @@ class Search:
 
 
 
-if __name__ == "__main__":
-    subreddit_name = input("Enter the string you want to search for: ")
-    query = input("Enter the string you want to search for: ")
-    # username = input("Enter the username you want to search for: ")
-    search = Search()
-    # data = search.search_reddit(subreddit_name, query)
-    data = search.search_reddit(subreddit_name, query)
+# if __name__ == "__main__":
+#     subreddit_name = input("Enter the string you want to search for: ")
+#     query = input("Enter the string you want to search for: ")
+#     # username = input("Enter the username you want to search for: ")
+#     search = Search()
+#     # data = search.search_reddit(subreddit_name, query)
+#     data = search.search_reddit(subreddit_name, query)
 
 

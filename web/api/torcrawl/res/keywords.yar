@@ -11,10 +11,12 @@ rule email_filter
 
 }
 
-rule detect_drugs
-{
-    strings:
-        $drugs = "trouble"
-    condition:
-        $drugs
-}
+
+    rule detect_keywords
+    {
+        strings:
+            	${keyword0} = "drug" ascii nocase
+        condition:
+            any of them
+    }
+    
