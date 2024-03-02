@@ -14,7 +14,7 @@ class Search:
             user_agent='Rudra-CIDE by /u/Neat_Task4167'
         )
 
-    def search_world(self, subreddit, query):
+    def search_world(self, key, query):
         result = {}
 
     def search_reddit(self, subreddit, query):

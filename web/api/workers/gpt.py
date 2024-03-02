@@ -4,14 +4,6 @@ from config import OPEN_API_KEY
 openai.api_key = OPEN_API_KEY
 
 prompts = """
-Read the message and what type of operation should we use (CRUD), how much is the quantity, what is the standard unit of the quantity, what is the item to be operated. 
-Fill in the below json and return only the json (not even a text) and all text should be lower case.
-{
-    "operation": string,
-    "quantity": integer,
-    "unit": string,
-    "item": string
-}
 """
 
 async def genResponse(message: str):
