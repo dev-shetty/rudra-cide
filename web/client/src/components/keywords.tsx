@@ -28,7 +28,7 @@ export default function Keywords({ inputs, setInputs }: KeywordsProps) {
     <div className="flex flex-col">
       <div className="grid grid-cols-4 gap-1">
         {inputs.map((inp, index) => (
-          <div key={index} className="flex items-center relative mb-4">
+          <div key={index} className="flex items-center relative">
             <Input
               type="text"
               placeholder="Keyword"
@@ -45,11 +45,11 @@ export default function Keywords({ inputs, setInputs }: KeywordsProps) {
             />
           </div>
         ))}
+        <Button onClick={addInput} className="flex gap-2">
+          Add Keyword
+          <PlusCircle />
+        </Button>
       </div>
-      <Button onClick={addInput} className="flex gap-2">
-        Add Keyword
-        <PlusCircle />
-      </Button>
     </div>
   )
 }

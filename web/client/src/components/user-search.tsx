@@ -6,11 +6,12 @@ import { SearchIcon } from "lucide-react"
 import { FormEvent, useState } from "react"
 
 export default function UserSearch() {
-  const [search, setSearch] = useState<string | null>(null)
+  const [user, setUser] = useState<string | null>(null)
+  const [keyword, setKeyword] = useState<string | null>(null)
 
   function handleSearch(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    console.log({ search })
+    console.log({ user, keyword })
   }
   return (
     <form className="w-full flex items-center space-x-2" onClick={handleSearch}>
@@ -18,10 +19,16 @@ export default function UserSearch() {
       <Input
         className="w-full flex-1"
         placeholder="Enter the username"
-        type="search"
-        onChange={(e) => setSearch(e.target.value)}
+        type="text"
+        onChange={(e) => setUser(e.target.value)}
       />
-      <Button type="submit">Search</Button>
+      <Input
+        className="w-full flex-1"
+        placeholder="Keyword to search"
+        type="text"
+        onChange={(e) => setKeyword (e.target.value)}
+      />
+      <Button type="submit">Find</Button>
     </form>
   )
 }
