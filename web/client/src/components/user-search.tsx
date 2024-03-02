@@ -26,7 +26,7 @@ export default function UserSearch() {
         className="w-full flex-1"
         placeholder="Keyword to search"
         type="text"
-        onChange={(e) => setKeyword (e.target.value)}
+        onChange={(e) => setKeyword(e.target.value)}
       />
       <Button type="submit">Find</Button>
     </form>
