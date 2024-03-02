@@ -29,7 +29,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.get("/")
+@app.get("/")
 async def home():
     return JSONResponse({ "success": True })
 
