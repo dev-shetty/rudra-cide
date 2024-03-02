@@ -34,24 +34,29 @@ class Crawler:
         # External links
         elif link.startswith('http') and not link.startswith(self.website):
             file_path = self.out_path + '/extlinks.txt'
-            with open(file_path, 'w+', encoding='UTF-8') as lst_file:
+            with open(file_path, 'a+', encoding='UTF-8') as lst_file:
                 lst_file.write(str(link) + '\n')
             return True
         # Telephone Number
         elif link.startswith('tel:'):
             file_path = self.out_path + '/telephones.txt'
-            with open(file_path, 'w+', encoding='UTF-8') as lst_file:
+            with open(file_path, 'a+', encoding='UTF-8') as lst_file:
                 lst_file.write(str(link) + '\n')
             return True
         # Mails
         elif link.startswith('mailto:'):
             file_path = self.out_path + '/mails.txt'
-            with open(file_path, 'w+', encoding='UTF-8') as lst_file:
+            with open(file_path, 'a+', encoding='UTF-8') as lst_file:
                 lst_file.write(str(link) + '\n')
             return True
         # Type of files
         elif re.search('^.*\\.(pdf|jpg|jpeg|png|gif|doc)$', link,
                        re.IGNORECASE):
+            return True
+        elif re.search('\b[13][a-km-zA-HJ-NP-Z1-9]{25,34}\b', link):
+            file_path = self.out_path + '/btc.txt'
+            with open(file_path, 'a+', encoding='UTF-8') as lst_file:
+                lst_file.write(str(link) + '\n')
             return True
 
     def canonical(self, link):

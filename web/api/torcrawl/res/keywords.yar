@@ -2,29 +2,19 @@
     Yara.
 */
 
-/*
-    rule email_filter
-    {
-        meta:
-            author = "@the-siegfried"
-            score = 20
+rule email_filter
+{
         strings:
               $email_add = /\b[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)*\.[a-zA-Z-]+[\w-]\b/
         condition:
             any of them
 
-    }
-*/
+}
 
-rule keyword_search
+rule detect_drugs
 {
-    meta:
-        author = "@the-siegfried"
-        score = 90
-
     strings:
-        $a = "DNM" fullword wide ascii nocase
-
+        $drugs = "trouble"
     condition:
-        any of them
+        $drugs
 }
