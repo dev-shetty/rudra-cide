@@ -1,7 +1,7 @@
 # License: GNU General Public License v3.0
 
 import requests, json, os
-from fastapi import APIRouter, Request, UploadFile, File
+from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
 from workers.exif import Exif

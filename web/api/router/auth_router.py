@@ -1,7 +1,6 @@
 # License: GNU General Public License v3.0
 
-import requests
-from fastapi import APIRouter, Request, UploadFile, File
+from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
 router = APIRouter()

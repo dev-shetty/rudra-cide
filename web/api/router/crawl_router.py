@@ -2,12 +2,10 @@
 
 import time, asyncio, os
 from fastapi import APIRouter, Request, UploadFile, File, WebSocket
-# from fastapi.websockets import WebSocket
 from fastapi.responses import StreamingResponse
 import subprocess
 from workers.model import CrawlModel
 from pathlib import Path
-
 
 
 router = APIRouter()
@@ -75,7 +73,6 @@ async def websocket_endpoint(websocket: WebSocket):
         with open(file_path, 'a') as f:
             f.write(f"{r}\n")
         v, c, d, p, e = True, True, 1, 1, True
-        print(data.url)
         command = [
             'python', 
             'torcrawl.py', 

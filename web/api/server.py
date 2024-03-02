@@ -4,16 +4,13 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from fastapi import APIRouter, Request, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-import subprocess
-import json
-
 from config import *
 import router.auth_router as auth_router
 import router.crawl_router as crawl_router
 import router.image_router as image_router
 import router.alias_router as alias_router
+import router.nmap_router as nmap_router
 
 app = FastAPI(
     title="Rudra-CIDE",
@@ -46,6 +43,7 @@ app.include_router(auth_router.router, prefix="/api/v1/auth")
 app.include_router(crawl_router.router, prefix="/api/v1/crawl")
 app.include_router(image_router.router, prefix="/api/v1/image")
 app.include_router(alias_router.router, prefix="/api/v1/alias")
+app.include_router(nmap_router.router, prefix="/api/v1/nmap")
 
 
 if __name__ == "__main__":
