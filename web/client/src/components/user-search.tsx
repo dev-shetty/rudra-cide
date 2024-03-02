@@ -3,16 +3,21 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { SearchIcon } from "lucide-react"
+import { useRouter } from "next/navigation"
 import { FormEvent, useState } from "react"
 
 export default function UserSearch() {
   const [user, setUser] = useState<string | null>(null)
   const [keyword, setKeyword] = useState<string | null>(null)
+  const router = useRouter()
 
-  function handleSearch(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    console.log({ user, keyword })
+  async function handleSearch(e: FormEvent<HTMLFormElement>) {
+    router.refresh()
+    router.push(
+      `/finder/result?${new URLSearchParams({ username: user!, key: keyword! })}`
+    )
   }
+
   return (
     <form className="w-full flex items-center space-x-2" onClick={handleSearch}>
       <SearchIcon className="w-4 h-4 opacity-50 mr-4" />

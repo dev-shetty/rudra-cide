@@ -18,12 +18,12 @@ export default function ServicePage() {
           href="/search"
           className="grid grid-rows-4 min-h-96 rounded-md border"
         >
-          <div className="relative row-span-3 overflow-hidden">
+          <div className="relative row-span-3 overflow-hidden rounded-t-md">
             <Image
               src="/keywords.jpg"
               alt="magnifying glass searching over alphabets"
               fill
-              className="w-full aspect-square transition-all duration-500 hover:scale-110"
+              className="w-full aspect-square transition-all duration-500 hover:scale-110 rounded-t-md"
             />
           </div>
           <div className="flex flex-col justify-center px-4 py-6">
@@ -36,12 +36,12 @@ export default function ServicePage() {
           </div>
         </Link>
         <Link href="/finder" className="grid grid-rows-4 rounded-md border">
-          <div className="relative row-span-3 overflow-hidden">
+          <div className="relative row-span-3 overflow-hidden rounded-t-md">
             <Image
               src="/person.webp"
               alt="magnifying glass searching over alphabets"
               fill
-              className="w-full aspect-square transition-all duration-500 hover:scale-110"
+              className="w-full aspect-square transition-all duration-500 hover:scale-110 rounded-t-md"
             />
           </div>
           <div className="flex flex-col justify-center px-4 py-6">
