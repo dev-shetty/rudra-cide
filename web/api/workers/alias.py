@@ -1,6 +1,9 @@
 
-import string, praw
-from config import REDDIT_API_CLIENT, REDDIT_API_SECRET
+import string, praw, time
+# from config import REDDIT_API_CLIENT, REDDIT_API_SECRET
+
+REDDIT_API_SECRET = "ebzQ-2SQfmdtpetKI6mvHGxdRdnZ7w"
+REDDIT_API_CLIENT = "uncXIpkUVmB1BAJopPcKWQ"
 
 class Alias:
     def __init__(self):
@@ -11,36 +14,60 @@ class Alias:
         )
         self.found = {}
 
-    def check_redit(self, key, user: str):
+    async def check_reddit(self, key, user: str):
         alphabets = string.ascii_lowercase+string.digits
         self.found[user] = []
+        users = []
+        try:
+            redditor = self.reddit.redditor(user)
+            users.append(user)
+        except Exception as e:
+            pass
         for char in alphabets:
             username = f"{user}{char}"
             try:
                 redditor = self.reddit.redditor(username)
-                data = self.track_user_activity(key, user)
-                if not data.success:
-                    self.found[user].append(username)
+                users.append(username)
             except Exception as e:
                 pass
+        for user in users:
+            data = await self.check_reddit_data(user, key)
+            print(data)
+            time.sleep(1)
+            if data['success']:
+                self.found[user].append(data['data'])
         return self.found
-
-    def track_user_activity(self, key, user: str):
+    
+    async def check_reddit_data(self, username, key):
         try:
-            results = []
-            user = self.reddit.redditor(user)
-            for submission in user.submissions.new():
-                if key.lower() in submission.title.lower() or key.lower() in submission.selftext.lower():
-                    results.append((submission.title, submission.url, submission.author.name))
-            for comment in user.comments.new():
-                if key.lower() in comment.body.lower():
-                    results.append((comment.body, comment.permalink, comment.author.name))
-            return {'success': True, 'data': results}
-        except Exception:
-            return {'success': False}
+            posts = self.reddit.redditor(username).submissions.new(limit=None)
+            data = {}
+            data['username'] = username
+            data['posts'] = []
+            data['comments'] = []
+            for post in posts:
+                if key in post.selftext:
+                    post_data = {
+                        'title': post.title,
+                        'url': post.url,
+                        'text': post.selftext
+                    }
+                    data['posts'].append(post_data)
+            comments = self.reddit.redditor(username).comments.new(limit=None)
+            for comment in comments:
+                if key in comment.body:
+                    comment_data = {
+                        'url': comment.submission.url,
+                        'text': comment.body
+                    }
+                    data['comments'].append(comment_data)
+            return {'success': True,  'data': data}
+        except Exception as e:
+            return {'success': False }
 
 
+alias = Alias()
+# print(alias.check_reddit('Lonely_Spell9563', 'buy'))
+print(alias.check_reddit_data('Lonely_Spell9563', 'buy'))
 
-# alias = Alias()
 
-# print(alias.check_redit("Hi", "rudra"))
