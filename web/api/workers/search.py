@@ -5,16 +5,12 @@
 
 
 import requests, praw
-
-
-API_SECRET = "ebzQ-2SQfmdtpetKI6mvHGxdRdnZ7w"
-API_CLIENT = "uncXIpkUVmB1BAJopPcKWQ"
-
+from config import REDDIT_API_CLIENT, REDDIT_API_SECRET
 class Search:
     def __init__(self):
         self.reddit = praw.Reddit(
-            client_id=API_CLIENT,
-            client_secret=API_SECRET,
+            client_id=REDDIT_API_CLIENT,
+            client_secret=REDDIT_API_SECRET,
             user_agent='Rudra-CIDE by /u/Neat_Task4167'
         )
 
