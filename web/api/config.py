@@ -1,0 +1,5 @@
+
+
+KEY = b'AkkilMG'
+
+MONGODB = ""
