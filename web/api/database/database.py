@@ -2,8 +2,6 @@
 
 import redis
 
-
-
 class Redis:
     def __init__(self):
         self.db = redis.Redis(host='localhost', port=6379, db=0)
