@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html dir="" lang="en">
+<head>
+<meta content="Hugo 0.68.3" name="generator"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Welcome to the DNM Buyer’s Bible Hello and welcome to the Darknetmarkets bible for buyers. The buyer’s DNM bible aims to be a complete guide that covers all steps that users have to take in order to buy securely from darknetmarkets.
+It orientates itself on OpSec best practices and, if exactly followed, will greatly minimize the risk of you getting caught. There never will be 100% security, but with the help of the buyer’s DNM bible you can make it extremely hard and not worthwhile for law enforcement to catch you." name="description"/>
+<meta content="#FFFFFF" name="theme-color"/><meta content="Introduction" property="og:title">
+<meta content="" property="og:description">
+<meta content="website" property="og:type">
+<meta content="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/" property="og:url">
+<title>Introduction | DNM Bible</title>
+<link href="/manifest.json" rel="manifest"/>
+<link href="/favicon.png" rel="icon" type="image/x-icon"/>
+<link href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/es/" hreflang="es" rel="alternate" title="Introduction"/>
+<link href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/fr/" hreflang="fr" rel="alternate" title="Introduction"/>
+<link href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/de/" hreflang="de" rel="alternate" title="Introduction"/>
+<link href="/book.min.70870d18fd3e72519924a6f3be367e8227ec2df1dc92dae9f9fcf8b69318de06.css" integrity="sha256-cIcNGP0+clGZJKbzvjZ+gifsLfHcktrp+fz4tpMY3gY=" rel="stylesheet"/>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+</meta></meta></meta></meta></head>
+<body dir="">
+<input class="hidden toggle" id="menu-control" type="checkbox"/>
+<input class="hidden toggle" id="toc-control" type="checkbox"/>
+<main class="container flex">
+<aside class="book-menu">
+<nav>
+<h2 class="book-brand">
+<a href="/"><span>DNM Bible</span>
+</a>
+</h2>
+<ul>
+<li class="book-section-flat">
+<span>Bible</span>
+<ul>
+<li>
+<input class="toggle" id="section-8bbdb096ca1e07bd997b7af26003034f" type="checkbox"/>
+<label class="flex justify-between" for="section-8bbdb096ca1e07bd997b7af26003034f">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/about/">About</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/about/before-you-start/">Before you start</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-2257427ed8e55517b9bb2b9fb91e50ea" type="checkbox"/>
+<label class="flex justify-between" for="section-2257427ed8e55517b9bb2b9fb91e50ea">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/">Operating Systems</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input class="toggle" id="section-317772e44a73cf791b98ea5a6e8cff92" type="checkbox"/>
+<label class="flex justify-between" for="section-317772e44a73cf791b98ea5a6e8cff92">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/host_operatingsystem/">Host Operating System</a>
+<span>▾</span>
+</label>
+</li>
+<li>
+<input class="toggle" id="section-a704da56889756d1eff12b490c90339a" type="checkbox"/>
+<label class="flex justify-between" for="section-a704da56889756d1eff12b490c90339a">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/tails/">Tails</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/tails/installing_tails/">Installing Tails</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/tails/important_settings/">Important settings and tips</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/tails/setting_up_persistence/">Setting up the persistence volume</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/tails/upgrading/">Upgrading</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/tails/backing_up/">Backing up</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/tails/install_packages/">Optional: Install Debian Packages on Boot</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/tails/got_problems/">Got problems?</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-87010c6cf506de91338fae440a3d206d" type="checkbox"/>
+<label class="flex justify-between" for="section-87010c6cf506de91338fae440a3d206d">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/whonix/">Whonix</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/whonix/installing_the_host_os/">Installing Host OS</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/whonix/install_whonix/">Installing Whonix</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/whonix/starting_and_shutting_down/">Starting and shutting down Whonix</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/whonix/performance_tips/">Performance tips</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-00c85ec7f531157d4e2bc0c553c579e2" type="checkbox"/>
+<label class="flex justify-between" for="section-00c85ec7f531157d4e2bc0c553c579e2">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/qubes/">Qubes/Whonix</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/qubes/installing_qubes/">Installing Qubes</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-d30256be611223a4694dcb9f3e5fff49" type="checkbox"/>
+<label class="flex justify-between" for="section-d30256be611223a4694dcb9f3e5fff49">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/mobile/">Mobile Guide</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input class="toggle" id="section-cdf37ab720fc0686a1ad37b962e97289" type="checkbox"/>
+<label class="flex justify-between" for="section-cdf37ab720fc0686a1ad37b962e97289">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/operating-systems/mobile/mobile_guide/">Installation</a>
+<span>▾</span>
+</label>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-c7dcbaaf373bccfbcc23d82dbae03609" type="checkbox"/>
+<label class="flex justify-between" for="section-c7dcbaaf373bccfbcc23d82dbae03609">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/keepassxc/">KeePassXC</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/keepassxc/creating_a_databse/">Creating a database</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/keepassxc/opening_a_database/">Opening a database</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/keepassxc/adding_entries/">Adding entries</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/keepassxc/accessing_secrets/">Accessing secrets</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-379435d67787caa1f0ac267e9f2093c9" type="checkbox"/>
+<label class="flex justify-between" for="section-379435d67787caa1f0ac267e9f2093c9">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/pgp/">PGP</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/pgp/creating_a_pgp_key_pair/">Creating a key pair</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/pgp/importing_a_public_key/">Importing a public key</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/pgp/encrypt_a_message/">Encrypting a message</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/pgp/verifying_a_message/">Verifying a message</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/pgp/decrypting_a_message/">Decrypting a message</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/pgp/signing_a_message/">Signing a message</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-345c086d57e22adea229d6f8bfce901d" type="checkbox"/>
+<label class="flex justify-between" for="section-345c086d57e22adea229d6f8bfce901d">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/">Cryptocurrencies</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input class="toggle" id="section-28d314344cfb271c3aa2e5f530094b7c" type="checkbox"/>
+<label class="flex justify-between" for="section-28d314344cfb271c3aa2e5f530094b7c">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/monero/">Monero (XMR)</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input class="toggle" id="section-bcc7392da2d9a0cbfd6ebf63bba8eb5d" type="checkbox"/>
+<label class="flex justify-between" for="section-bcc7392da2d9a0cbfd6ebf63bba8eb5d">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/monero/faq/">Monero FAQ</a>
+<span>▾</span>
+</label>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/monero/how_to_buy/">How to buy Monero</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/monero/installing_monero/">Installing Monero</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/monero/creating_monero_wallets/">Creating Monero Wallets</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-f6f438173845c21ee04fbd75963d1a4c" type="checkbox"/>
+<label class="flex justify-between" for="section-f6f438173845c21ee04fbd75963d1a4c">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/litecoin/">Litecoin (LTC)</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/litecoin/litecoin_tails/">Installing Litecoin in Tails</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-dfd45ccfcc6c6107b81a6e5382752081" type="checkbox"/>
+<label class="flex justify-between" for="section-dfd45ccfcc6c6107b81a6e5382752081">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/bitcoin/">Bitcoin (BTC)</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/bitcoin/important_tips/">Important tips regarding Bitcoin</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/bitcoin/how_to_buy_bitcoin/">How to buy Bitcoin (BTC)</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/bitcoin/tumbling/">Tumbling</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/bitcoin/setting_up_your_wallet/">Setting up your wallet (BTC)</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/bitcoin/sending_bitcoins/">Sending Bitcoin</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/bitcoin/transactions_not_getting_confirmed/">Transactions not getting confirmed</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-4eab7d4cea4dba4ba11c806b5383ab97" type="checkbox"/>
+<label class="flex justify-between" for="section-4eab7d4cea4dba4ba11c806b5383ab97">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/converting/">Converting</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/converting/converting_coins/">Converting Coins</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/cryptocurrencies/converting/crypto_closing_words/">Crypto Closing Words</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-aa0103a72160cbcdb94b858e1b944652" type="checkbox"/>
+<label class="flex justify-between" for="section-aa0103a72160cbcdb94b858e1b944652">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/shipping/">Shipping</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/shipping/origin_countries/">Origin Countries</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/shipping/stealth/">Stealth</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/shipping/non_arriving_packages/">Non arriving Packages</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/shipping/drop/">Drop</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/shipping/controlled_delivery/">Controlled Delivery (CD)</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/shipping/monitored_delivery/">Monitored Delivery</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/shipping/love_letter/">Love Letter</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-ff6ca5e417f82402c92f4b3ac4a4715c" type="checkbox"/>
+<label class="flex justify-between" for="section-ff6ca5e417f82402c92f4b3ac4a4715c">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/harm-reduction/">Harm Reduction</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/harm-reduction/resources/">Resources</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/harm-reduction/labs/">Labs</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/harm-reduction/suicide_numbers/">Suicide Hotlines</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-505b5c5760a8216655f6d859568f5d44" type="checkbox"/>
+<label class="flex justify-between" for="section-505b5c5760a8216655f6d859568f5d44">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/">Darknet Markets</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/important_tips/">Important tips for using markets</a>
+</li>
+<li>
+<input class="toggle" id="section-af06ccf940ad4f7436fd1797f7335e55" type="checkbox"/>
+<label class="flex justify-between" for="section-af06ccf940ad4f7436fd1797f7335e55">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/types-of-markets/">Types of market</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/types-of-markets/multisig/">Multisignature (Multisig)</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/types-of-markets/escrow/">Escrow</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/types-of-markets/direct_deal/">Direct Deal(DD)</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/choosing_a_market/">Choosing a Darknet Market</a>
+</li>
+<li>
+<input class="toggle" id="section-79e86efc7e8a437a2a80ee92aee0d415" type="checkbox"/>
+<label class="flex justify-between" for="section-79e86efc7e8a437a2a80ee92aee0d415">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/how-to-verify-an-onion/">How to verify an onion</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/how-to-verify-an-onion/verify_onion/">How to verify an onion</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/how-to-verify-an-onion/practice_verifying/">Practice verifying</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/how-to-verify-an-onion/how_ddf_dnl_were_hijacked/">How DDF/DNL were hijacked</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/choosing_a_vendor/">Choosing a vendor</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/types_of_scams/">Types of Scams</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/how_to_be_a_good_buyer/">How to be a good buyer</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/getting_a_lawyer/">Getting a lawyer</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/making_a_purchase/">Making a purchase</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/giving_feedback/">Giving Feedback</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/darknetmarkets/irl_opsec/">IRL OpSec</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-2aeff91c301acc8a9ac4cbbf654ed6d9" type="checkbox"/>
+<label class="flex justify-between" for="section-2aeff91c301acc8a9ac4cbbf654ed6d9">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/communication-methods/">Alternative communication methods</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/communication-methods/email/">Email</a>
+</li>
+<li>
+<input class="toggle" id="section-71a314f0414e8b8edb23b74e764cd9a7" type="checkbox"/>
+<label class="flex justify-between" for="section-71a314f0414e8b8edb23b74e764cd9a7">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/communication-methods/jabberxmpp/">Jabber / XMPP</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/communication-methods/jabberxmpp/gajim+omemo/">Setup Gajim+OMEMO</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/communication-methods/jabberxmpp/setup-pidgin+otr/">Setup Pidgin+OTR</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/communication-methods/jabberxmpp/using-pidgin+otr/">Using pidgin+OTR (XMPP)</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/communication-methods/jabberxmpp/services/">Services</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-251d6b5a41e42f291064d7830f6284d2" type="checkbox"/>
+<label class="flex justify-between" for="section-251d6b5a41e42f291064d7830f6284d2">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/">Miscellaneous information</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/javascript/">Javascript</a>
+</li>
+<li>
+<input class="toggle" id="section-d9326c844a6c53703a1cb9949c0ae4d7" type="checkbox"/>
+<label class="flex justify-between" for="section-d9326c844a6c53703a1cb9949c0ae4d7">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/offline-version/">Offline Version</a>
+<span>▾</span>
+</label>
+<ul>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-ae5b57bd925ea6bcabec64cabdeb338d" type="checkbox"/>
+<label class="flex justify-between" for="section-ae5b57bd925ea6bcabec64cabdeb338d">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/removing-exif-data/">Removing Exif Data</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/removing-exif-data/uploading_images_securely/">Uploading images securely</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-e607e4f30ea2c7bb23b5ae595d238ba6" type="checkbox"/>
+<label class="flex justify-between" for="section-e607e4f30ea2c7bb23b5ae595d238ba6">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/openbazaar/">OpenBazaar</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/openbazaar/installing_on_whonix/">Installing on Whonix</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/openbazaar/customizing_the_settings/">Customizing the settings</a>
+</li>
+</ul>
+</li>
+<li>
+<input class="toggle" id="section-22efcc6ea98ddcb322c5d1ba35a0b9bd" type="checkbox"/>
+<label class="flex justify-between" for="section-22efcc6ea98ddcb322c5d1ba35a0b9bd">
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/i2p/">I2P</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/i2p/tails/">Tails I2P</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/i2p/androidi2p/">Android I2P</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/i2p/ubuntui2p/">Ubuntu I2P</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/miscellaneous-information/i2p/qubeswhonixi2p/">Qubes/Whonix I2P</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/bible/closing-words/">Closing Words</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li class="book-section-flat">
+<span>Appendix</span>
+<ul>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/appendix/resources/">Resources</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/appendix/contents/">Table of Contents</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/appendix/glossary/">Glossary</a>
+</li>
+<li>
+<a class="" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/appendix/faq/">FAQ</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+<div class="book-page">
+<header class="book-header">
+<div class="flex align-center justify-between">
+<label for="menu-control">
+<img alt="Menu" class="book-icon" src="/svg/menu.svg"/>
+</label>
+<strong>Introduction</strong>
+<label for="toc-control">
+<img alt="Table of Contents" class="book-icon" src="/svg/toc.svg"/>
+</label>
+</div>
+<aside class="hidden clearfix">
+<br/><br/><br/>
+<nav id="TableOfContents">
+<ul>
+<li><a href="#welcome-to-the-dnm-buyers-bible">Welcome to the DNM Buyer’s Bible</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class="markdown"><h1 id="welcome-to-the-dnm-buyers-bible">Welcome to the DNM Buyer’s Bible</h1>
+<p>Hello and welcome to the Darknetmarkets bible for buyers. The buyer’s DNM bible aims to be a complete guide that covers all steps that users have to take in order to buy securely from darknetmarkets.</p>
+<p>It orientates itself on OpSec best practices and, if exactly followed, will greatly minimize the risk of you getting caught. There never will be 100% security, but with the help of the buyer’s DNM bible you can make it extremely hard and not worthwhile for law enforcement to catch you.</p>
+<p>If you are a complete new user and have heard nothing or close to nothing about topic like Tails, Monero and PGP, you will need several hours to go through this guide and follow the instructions. In fact you will probably not be able to buy from darknetmarkets tomorrow or the day after tomorrow. It takes time to get the secure setup, which is described in the DNM bible, working. Once you finished the initial setup it will be pretty easy though. For future orders you just have to repeat the same steps for ordering on the secure setup that you already have.</p>
+<p>However buying from DNMs is <strong>not</strong> for everyone. If you have little computer experience and are not willing to invest much time, then you should stick to real life sources and stay away from the DNMs. They will only get you into big legal trouble if you do not use them correctly.</p>
+<p>If you are willing to learn and invest some time, then please read and follow every single step of the guide. If you run into problems please check if the DNM bible or the sidebar of <a href="http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/d/DarknetMarketsNoobs">/d/DarknetMarketsNoobs</a>
+ already has that issue covered. If not feel free to make a post on this subdread with a <em>detailed</em> description of your issues.</p>
+<p>Some parts of this guide have gifs added to them which show how to do some of the steps. However these are just as additional information because software often changes and these gifs can quickly become outdated. Please read the guide first and the resources that are linked <strong>before</strong> blindly doing what is shown in the gif. If you get stuck somewhere you can watch the gifs which may clear things up for you.</p>
+<p>Happy reading and stay safe.</p>
+<p><strong>Any requests or changes you can message me on Dread <a href="http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/u/Shakybeats/message">Shakybeats</a></strong></p>
+<blockquote class="book-hint info">
+  Interesting in reading the DNM bible offline? Make sure you read our new <a href="/bible/miscellaneous-information/offline-version/">offline chapter!</a>.
+</blockquote>
+</article>
+<footer class="book-footer">
+<div class="flex flex-wrap justify-between">
+<div aria-haspopup="true" class="book-languages" tabindex="0">
+<ul>
+<li class="flex align-center">
+<img alt="Languages" class="book-icon" src="/svg/translate.svg"/>
+      English
+    </li>
+</ul>
+<ul class="book-languages-list">
+<li class="active">
+<a class="flex align-center" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/">
+<img alt="Languages" class="book-icon" src="/svg/translate.svg"/>
+        English
+      </a>
+</li>
+<li class="">
+<a class="flex align-center" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/es/">
+<img alt="Languages" class="book-icon" src="/svg/translate.svg"/>
+        Spanish
+      </a>
+</li>
+<li class="">
+<a class="flex align-center" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/fr/">
+<img alt="Languages" class="book-icon" src="/svg/translate.svg"/>
+        French
+      </a>
+</li>
+<li class="">
+<a class="flex align-center" href="http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/de/">
+<img alt="Languages" class="book-icon" src="/svg/translate.svg"/>
+        German
+      </a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+<label class="hidden book-menu-overlay" for="menu-control"></label>
+</div>
+<aside class="book-toc">
+<br/><br/><br/>
+<nav id="TableOfContents">
+<ul>
+<li><a href="#welcome-to-the-dnm-buyers-bible">Welcome to the DNM Buyer’s Bible</a></li>
+</ul>
+</nav>
+</aside>
+</main>
+<div id="js-warning">
+<input checked="" id="warning" type="checkbox"/>
+<div class="modal">
+<div class="modal__inner">
+<h1>Warning</h1>
+<p>Warning you have javascript enabled! Go to <a href="/bible/miscellaneous-information/javascript/">this page</a> to learn how to disable it.</p>
+<label for="warning" id="js-warning-close">X</label>
+</div>
+</div>
+</div>
+<style>
+    #js-warning .modal {
+        align-items: center;
+        background-color: rgba(0,0,0,0.75);
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        visibility: hidden;
+    }
+    #js-warning .modal__inner {
+        background: white;
+        padding: 30px;
+        position: absolute;
+        color: black;
+    }
+    #js-warning label {
+        display: inline-block;
+        cursor: pointer;
+    }
+    #js-warning input {
+        display: none;
+    }
+    #js-warning-close{
+        color: #fff;
+        text-align: center;
+    }
+    #js-warning input:checked + .modal {
+        opacity: 1;
+        visibility: visible;
+    }
+    #js-warning input:checked + .modal label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        background: #666666;
+    }
+    #js-warning input:checked + .modal label:hover {
+        background: #333333;
+    }
+</style>
+<noscript>
+<style>
+		#js-warning {
+            display: none;
+        }
+	</style>
+</noscript>
+</body>
+</html>
