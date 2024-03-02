@@ -1,27 +1,31 @@
-import openai, json
+import requests
+import json
 
-from config import OPEN_API_KEY
-openai.api_key = OPEN_API_KEY
+def complete_chat(message, api_key):
+    url = "https://api.openai.com/v1/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {api_key}"
+    }
+    data = {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+            {"role": "user", "content": message}
+        ]
+    }
+    response = requests.post(url, headers=headers, data=json.dumps(data))
+    return response.json()
 
-prompts = """
-"""
+# Example usage:
+api_key = ""
+data=""
+pretext="""i will give you a html code and you have to find out the person who is selling the illegal content from the html with alias name give the result and also the context can be grouped like drugs arms etc in the in this format strictly <aliasname:content> only
+here is the html"""
 
-async def genResponse(message: str):
-    try:
-        text = f"Message: '{message}'"+prompts
-        response = openai.Completion.create(
-            engine="gpt-3.5-turbo-instruct",
-            prompt=text,
-            max_tokens=75,  # Increase the max_tokens value to get a longer response
-            temperature=0.7,
-            top_p=1.0,
-            n=1,
-            stop=None,
-            frequency_penalty=0,
-            presence_penalty=0,
-            # format="json"  
-        )
-        return { 'success': True, 'data': json.loads(response.choices[0].text) }
-    except Exception as e:
-        return { 'success': False, 'message': f'{e}' }
+with open("testdata.txt",'r',encoding="utf-8") as file:
 
+        data=file.read()
+        data=f"""{data}"""
+user_message = pretext+data
+response = complete_chat(user_message, api_key)
+print("Response:", response)
