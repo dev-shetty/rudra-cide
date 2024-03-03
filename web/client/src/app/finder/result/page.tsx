@@ -1,20 +1,41 @@
-"use client"
+type FinderSearchParams = {
+  username: string
+  key: string
+}
 
-import Loading from "@/app/finder/result/loading"
-import { Suspense, useEffect, useState } from "react"
+async function getUserAlias(username: string, key: string) {
+  const body = {
+    username,
+    key,
+  }
 
-export default function FinderResult() {
-  const [loading, setLoading] = useState(true)
-  // Simulate loading for 3 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 3000)
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/alias/alias-user`,
+    {
+      method: "POST",
+      headers: {
+        accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    }
+  )
+  const data = await response.json()
+  return data
+}
 
-    // Clear timeout on component unmount to avoid memory leaks
-    return () => clearTimeout(timer)
-  }, [])
+export default async function FinderResult({
+  params,
+}: {
+  params: FinderSearchParams
+}) {
+  const { username, key } = params
+  const userAlias = await getUserAlias(username, key)
+  console.log(userAlias)
+
   return (
-    <Suspense fallback={<Loading />}>{!loading && <div>Hello</div>}</Suspense>
+    <div>
+      <h1>Hello</h1>
+    </div>
   )
 }
