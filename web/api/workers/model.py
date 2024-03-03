@@ -11,6 +11,9 @@ class AliasModel(BaseModel):
 class ImageModel(BaseModel):
     img: list
 
+class ImageExifModel(BaseModel):
+    img: str
+
 class CrawlModel(BaseModel):
     url: str
     keywords: list[str]

@@ -38,7 +38,7 @@ async def send_data_to_websocket(websocket):
 
 @router.post("/generate_html")
 async def get_html(data: CrawlModel):
-    # try:
+    try:
         r = generate_yara_rule(data.keywords)
         file_path = Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar"
         with open(file_path, 'w') as f:
@@ -61,10 +61,9 @@ async def get_html(data: CrawlModel):
         # (output, err) = p.communicate() 
         # p_status = p.wait()
         subprocess.call(command)
-
         return {'success': True, 'message': await _read_file()}
-    # except Exception as e:
-    #     print(f"WebSocket error: {e}")
+    except Exception as e:
+        print(f"WebSocket error: {e}")
         
 
 async def _read_file() -> str:

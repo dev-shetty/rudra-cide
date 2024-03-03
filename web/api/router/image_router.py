@@ -5,7 +5,7 @@ from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
 from workers.exif import Exif
-from workers.model import ImageModel
+from workers.model import ImageExifModel, ImageModel
 
 router = APIRouter()
 
@@ -52,7 +52,7 @@ async def list_image_exif(request: Request, data: ImageModel):
 
 
 @router.post("/image-exif")
-async def image_exif(request: Request, url: str):
+async def image_exif(request: Request, url: ImageExifModel):
     try:
         metadata = []
         img_output = './output/image/'
