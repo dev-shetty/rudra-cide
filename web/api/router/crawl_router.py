@@ -22,18 +22,18 @@ def generate_yara_rule(keywords):
     return rule_template % strings_section
 
 
-async def execute_command(command):
-    completed_process = await asyncio.create_subprocess_exec(*command)
-    await completed_process.wait()
-    #completed_process = await asyncio.create_subprocess_shell()
-    #await completed_process.wait()
+# async def execute_command(command):
+#     completed_process = await asyncio.create_subprocess_exec(*command)
+#     await completed_process.wait()
+#     #completed_process = await asyncio.create_subprocess_shell()
+#     #await completed_process.wait()
 
 
-async def send_data_to_websocket(websocket):
-        while True:
-            data = await _read_file()
-            await websocket.send_text(data)  
-            await asyncio.sleep(1)
+# async def send_data_to_websocket(websocket):
+#         while True:
+#             data = await _read_file()
+#             await websocket.send_text(data)  
+#             await asyncio.sleep(1)
 
 
 @router.post("/generate_html")

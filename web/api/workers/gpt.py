@@ -25,5 +25,5 @@ with open("testdata.txt",'r',encoding="utf-8") as file:
         data=file.read()
         data=f"""{data}"""
 user_message = pretext+data
-response = complete_chat(user_message, api_key)
+response = complete_chat(user_message, OPEN_API_KEY)
 print("Response:", response)
