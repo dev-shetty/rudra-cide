@@ -18,7 +18,7 @@ def generate_yara_rule(keywords):
             any of them
     }
     """
-    strings_section = "\n".join([f"\t${{keyword{i}}} = \"{keyword}\" ascii nocase" for i, keyword in enumerate(keywords)])
+    strings_section = "\n".join([f"\t${keyword[i]} = \"{keyword}\" ascii nocase" for i, keyword in enumerate(keywords)])
     return rule_template % strings_section
 
 
@@ -41,7 +41,7 @@ async def websocket_endpoint(websocket: WebSocket):
         data: CrawlModel = json.loads(dataRaw)
         r = generate_yara_rule(data['keywords'])
         file_path = Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar"
-        with open(file_path, 'a') as f:
+        with open(file_path, 'w') as f:
             f.write(f"{r}\n")
         v, c, d, p, e = True, True, 1, 1, True
         command = [
@@ -56,6 +56,8 @@ async def websocket_endpoint(websocket: WebSocket):
             str(e) and '-e', 
         ]
         subprocess_task = asyncio.create_task(execute_command(command))
+        import time
+        time.sleep(20)
         file_reading_task = asyncio.create_task(send_data_to_websocket(websocket))
         await asyncio.gather(subprocess_task, file_reading_task)
     except Exception as e:
@@ -67,6 +69,7 @@ async def _read_file() -> str:
     """Reads contents of the specified file."""
     try:
         async with open(Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar", "r") as file:
+            print(await file.read())
             return await file.read()
     except FileNotFoundError:
         print(f"File not found")
