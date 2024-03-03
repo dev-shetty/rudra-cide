@@ -27,3 +27,4 @@ openai==0.28.0
 beautifulsoup4==4.12.3
 selenium==4.18.1
 exifread==3.0.0
+typing==3.7.4.3

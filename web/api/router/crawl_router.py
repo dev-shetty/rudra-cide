@@ -43,15 +43,15 @@ async def get_html(data: CrawlModel):
         file_path = Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar"
         with open(file_path, 'w') as f:
             f.write(f"{r}\n")
-        v, c, d, p, e = True, True, 1, 1, True
+        v, c, e = True, True, True
         command = [
             'python', 
             './torcrawl/torcrawl.py', 
             str(v) and '-v', 
             str(c) and '-c', 
             '-u', data.url, 
-            '-d', str(d), 
-            '-p', str(p), 
+            '-d', str(data.d), 
+            '-p', str(data.p), 
             '-o', 'result.txt', 
             str(e) and '-e', 
         ]
