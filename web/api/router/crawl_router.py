@@ -60,7 +60,7 @@ async def get_html(data: CrawlModel):
         # p = subprocess.Popen(" ".join(command), stdout=subprocess.PIPE, shell=True)
         # (output, err) = p.communicate() 
         # p_status = p.wait()
-        subprocess.call(command, shell=True)
+        subprocess.call(command)
 
         return {'success': True, 'message': await _read_file()}
     # except Exception as e:
