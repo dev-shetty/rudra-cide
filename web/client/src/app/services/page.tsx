@@ -3,7 +3,7 @@ import { default as Link, default as p } from "next/link"
 
 export default function ServicePage() {
   return (
-    <section className="container">
+    <section className="px-16">
       <div className="text-center my-16">
         <h2 className="text-3xl font-bold leading-tight mb-4">
           Dark Web Monitoring Tool Services
@@ -13,7 +13,7 @@ export default function ServicePage() {
           footprint on the dark web.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-3 gap-8">
         <Link
           href="/search"
           className="grid grid-rows-4 min-h-96 rounded-md border"
@@ -51,6 +51,22 @@ export default function ServicePage() {
             <p className="text-gray-400">
               Find user aliases using Web Correlation, on clear net.
             </p>
+          </div>
+        </Link>
+        <Link href="/exif" className="grid grid-rows-4 rounded-md border">
+          <div className="relative row-span-3 overflow-hidden rounded-t-md">
+            <Image
+              src="/exif.jpeg"
+              alt="Exif Data"
+              fill
+              className="w-full aspect-square transition-all duration-500 hover:scale-110 rounded-t-md"
+            />
+          </div>
+          <div className="flex flex-col justify-center px-4 py-6">
+            <p className="text-2xl font-bold leading-tight hover:text-foreground/75">
+              Exif Extractor
+            </p>
+            <p className="text-gray-400">Get Exif data, from images</p>
           </div>
         </Link>
       </div>

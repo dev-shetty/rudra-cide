@@ -1,3 +1,4 @@
+import { redisClient } from "@/app/actions"
 import Loading from "@/app/finder/result/loading"
 import Link from "next/link"
 import { Suspense } from "react"
@@ -8,24 +9,38 @@ type FinderSearchParams = {
 }
 
 async function getUserAlias(username: string, key: string) {
+  const client = await redisClient()
+
   const body = {
     username,
     key,
   }
 
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/alias/alias-user`,
-    {
-      method: "POST",
-      headers: {
-        accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    }
-  )
-  const data = await response.json()
-  return data
+  const isInRedis = await client.get(`${username}:${key}`)
+  if (isInRedis) {
+    console.log(isInRedis)
+  }
+
+  console.log(process.env.NEXT_PUBLIC_BACKEND_BASE_URL)
+
+  try {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/alias/alias-user`,
+      {
+        method: "POST",
+        headers: {
+          accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      }
+    )
+    const data = await response.json()
+    // await client.set(`${username}:${key}`, data)
+    return data
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 export default async function FinderResult({

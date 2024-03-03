@@ -7,27 +7,38 @@ type FinderSearchParams = {
   key2: string
   key3: string
   search: string
+  d: string
+  p: string
 }
 
-async function getUserAlias(key: string[], search: string) {
+async function getDateByKeywords(
+  key: string[],
+  search: string,
+  d: string,
+  p: string
+) {
   const body = {
-    search,
-    key,
+    url: search,
+    keywords: key,
+    d: 2,
+    p: 1,
   }
 
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/alias/alias-user`,
-    {
-      method: "POST",
-      headers: {
-        accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    }
-  )
-  const data = await response.json()
-  return data
+  try {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/crawl/generate_html`,
+      {
+        method: "POST",
+        headers: {
+          accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      }
+    )
+    const data = await response.json()
+    return data
+  } catch (error) {}
 }
 
 export default async function FinderResult({
@@ -35,73 +46,52 @@ export default async function FinderResult({
 }: {
   searchParams: FinderSearchParams
 }) {
-  const { key1, key2, key3, search } = searchParams
-  console.log({ key1, key2, key3, search })
+  const { key1, key2, key3, search, d, p } = searchParams
 
-  const keys = [key1, key2, key3]
+  const keys: string[] = []
+
+  if (key1) {
+    keys.push(key1)
+  }
+  if (key2) {
+    keys.push(key2)
+  }
+  if (key3) {
+    keys.push(key3)
+  }
+
   console.log(keys)
 
-  //   const userAlias = await getUserAlias(key, search)
-  //   console.log(userAlias)
+  const keywords = await getDateByKeywords(keys, search, d, p)
+  console.log(keywords)
 
   return (
-    <Suspense fallback={<Loading />}>
-      <section className="grid gap-8 container my-8">
-        {/* <h1 className="text-center my-4 text-2xl">
-          Reddit search for User: {username} and Keyword: {key}
-        </h1>
-        <div className="grid gap-4">
-          <h2 className="text-xl px-4">
-            Posts where {username} mentioned <b>&quot;{key}&quot;</b>:{" "}
-          </h2>
-          {userAlias.data.posts.map((post: any, index: number) => (
-            <div
-              key={post.url}
-              className="flex border rounded-md border-white px-4 py-4 flex-col gap-2"
-            >
-              <p className="text-lg font-bold">{post.title}</p>
-              <p>{post.text}</p>
-              <p>
-                Post url:{" "}
-                <Link href={post.url} className="underline text-blue-200">
-                  {post.url}
-                </Link>
-              </p>
-            </div>
-          ))}
-
-          {userAlias.data.posts.length === 0 ? (
-            <p className="ml-2">No posts available</p>
-          ) : (
-            ""
-          )}
+    <section className="grid gap-8 container my-8 animate-pulse">
+      <div className="h-6 bg-gray-200 rounded w-1/2 mx-auto"></div>
+      <div className="h-4 bg-gray-200 rounded w-1/4 mx-auto"></div>
+      <div className="grid gap-4">
+        <div className="h-4 bg-gray-200 rounded w-1/3 mx-auto"></div>
+        <div className="flex border rounded-md border-white px-4 py-4 flex-col gap-2">
+          <div className="h-4 bg-gray-200 rounded w-full"></div>
+          <div className="h-4 bg-gray-200 rounded w-full"></div>
+          <div className="h-4 bg-gray-200 rounded w-1/2"></div>
         </div>
+        <div className="h-4 bg-gray-200 rounded w-1/4 mx-auto"></div>
+      </div>
 
-        <div className="grid gap-4">
-          <h2 className="text-xl px-4">
-            Comments where {username} mentioned <b>{key}</b>:{" "}
-          </h2>
-          {userAlias.data.comments.map((comment: any, index: number) => (
-            <div
-              key={comment.url}
-              className="flex border rounded-md border-white px-4 py-2 flex-col gap-2"
-            >
-              <p>{comment.text}</p>
-              <p>
-                Comment url:{" "}
-                <Link href={comment.url} className="underline text-blue-200">
-                  {comment.url}
-                </Link>
-              </p>
-            </div>
-          ))}
-          {userAlias.data.comments.length === 0 ? (
-            <p className="ml-2">No comments available</p>
-          ) : (
-            ""
-          )}
-        </div> */}
-      </section>
-    </Suspense>
+      <div className="grid gap-4">
+        <div className="h-4 bg-gray-200 rounded w-1/3 mx-auto"></div>
+        <div className="flex border rounded-md border-white px-4 py-2 flex-col gap-2">
+          <div className="h-4 bg-gray-200 rounded w-full"></div>
+          <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+        </div>
+        <div className="h-4 bg-gray-200 rounded w-1/4 mx-auto"></div>
+      </div>
+
+      <p className="text-center">Data is being collected...</p>
+      <p className="text-center text-xl">
+        Fetching links, downloading html files matching the keyword...
+      </p>
+    </section>
   )
 }

@@ -1,9 +1,9 @@
 
-    rule detect_keywords
-    {
-        strings:
-            	$d = "drug" ascii nocase
-        condition:
-            any of them
-    }
-    
+rule detect_keywords
+{
+    strings:
+        	$c = "cerebral" ascii nocase
+    condition:
+        any of them
+}
+

@@ -8,6 +8,8 @@ import { FormEvent, useState } from "react"
 
 export default function Search({ inputs }: { inputs: string[] }) {
   const [search, setSearch] = useState<string | null>(null)
+  const [d, setD] = useState(0)
+  const [p, setP] = useState(1)
   const router = useRouter()
 
   const params = new URLSearchParams()
@@ -15,6 +17,8 @@ export default function Search({ inputs }: { inputs: string[] }) {
     params.append(`key${index + 1}`, value)
   })
   params.append("search", search!)
+  params.append("d", d.toString())
+  params.append("p", p.toString())
 
   async function handleSearch(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -34,6 +38,18 @@ export default function Search({ inputs }: { inputs: string[] }) {
         type="search"
         onChange={(e) => setSearch(e.target.value)}
       />
+      {/* <Input
+        type="number"
+        onChange={(e) => setD(Number(e.target.value))}
+        defaultValue={d}
+        placeholder="Depth"
+      />
+      <Input
+        type="number"
+        onChange={(e) => setP(Number(e.target.value))}
+        defaultValue={p}
+        placeholder="Time interval"
+      /> */}
       <Button type="submit">Search</Button>
     </form>
   )

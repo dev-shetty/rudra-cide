@@ -4,20 +4,21 @@ import asyncio, json, subprocess
 from fastapi import APIRouter, WebSocket
 from workers.model import CrawlModel
 from pathlib import Path
+import os
 
 
 router = APIRouter()
 
 def generate_yara_rule(keywords):
     rule_template = """
-    rule detect_keywords
-    {
-        strings:
-            %s
-        condition:
-            any of them
-    }
-    """
+rule detect_keywords
+{
+    strings:
+        %s
+    condition:
+        any of them
+}
+"""
     strings_section = "\n".join([f"\t${keyword[i]} = \"{keyword}\" ascii nocase" for i, keyword in enumerate(keywords)])
     return rule_template % strings_section
 
@@ -39,39 +40,42 @@ def generate_yara_rule(keywords):
 @router.post("/generate_html")
 async def get_html(data: CrawlModel):
     try:
-        r = generate_yara_rule(data.keywords)
+        r = generate_yara_rule  (data.keywords)
         file_path = Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar"
         with open(file_path, 'w') as f:
             f.write(f"{r}\n")
         v, c, e = True, True, True
         command = [
+            'sudo',
             'python', 
             './torcrawl/torcrawl.py', 
-            str(v) and '-v', 
-            str(c) and '-c', 
+            '-v', 
+            '-c', 
             '-u', data.url, 
             '-d', str(data.d), 
             '-p', str(data.p), 
             '-o', 'result.txt', 
-            str(e) and '-e', 
+            '-e', 
+            '-y', '1'
         ]
+
         # subprocess.run(command)
         
         # p = subprocess.Popen(" ".join(command), stdout=subprocess.PIPE, shell=True)
         # (output, err) = p.communicate() 
         # p_status = p.wait()
-        subprocess.call(command)
-        return {'success': True, 'message': await _read_file()}
+        os.system(" ".join(command))
+        return {'success': True, 'message': 'Message'}
     except Exception as e:
         print(f"WebSocket error: {e}")
         
 
-async def _read_file() -> str:
-    """Reads contents of the specified file."""
-    try:
-        file_path = Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar"
-        with open(file_path, "r") as file:
-            return file.read()
-    except FileNotFoundError:
-        print(f"File not found")
-        return "Error: File not found"
+# async def _read_file() -> str:
+#     """Reads contents of the specified file."""
+#     try:
+#         file_path = Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar"
+#         with open(file_path, "r") as file:
+#             return file.read()
+#     except FileNotFoundError:
+#         print(f"File not found")
+#         return "Error: File not found"
