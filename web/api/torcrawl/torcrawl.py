@@ -58,8 +58,6 @@ from modules.crawler import Crawler
 from modules.extractor import extractor
 
 
-
-
 # Set socket and connection with TOR network
 def connect_tor():
     """ Connect to TOR via DNS resolution through a socket.

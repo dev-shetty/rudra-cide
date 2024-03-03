@@ -12,6 +12,8 @@ from random import randint
 
 from bs4 import BeautifulSoup
 
+class FileSizeError(Exception):
+    pass
 
 def text(response=None):
     """ Removes all the garbage from the HTML and takes only text elements
@@ -97,6 +99,8 @@ def cinex(input_file, out_path, yara=None):
                     continue
 
             with open(out_path + "/" + output_file, 'ab') as results:
+                if(os.path.getsize(out_path + "/" + output_file) > 148576):
+                    raise FileSizeError("Maximum file size reached")
                 results.write(content)
             print(f"# File created on: {os.getcwd()}/{out_path}/{output_file}")
         except HTTPError as e:
@@ -108,6 +112,9 @@ def cinex(input_file, out_path, yara=None):
         except IncompleteRead as e:
             print(f"IncompleteRead on {line}")
             continue
+        except FileSizeError as e:
+            print(f"{e}")
+            return
         except IOError as err:
             print(f"Error: {err}\nCan't write on file: {output_file}")
     file.close()
