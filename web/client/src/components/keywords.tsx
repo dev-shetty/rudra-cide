@@ -12,6 +12,7 @@ type KeywordsProps = {
 
 export default function Keywords({ inputs, setInputs }: KeywordsProps) {
   function addInput() {
+    if (inputs.length > 3) return
     const newInputs = [...inputs, ""]
     setInputs(newInputs)
   }

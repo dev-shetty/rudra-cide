@@ -17,7 +17,7 @@ export default function Component() {
               footprint on the dark web.
             </p>
             <Button className="flex gap-1" asChild>
-              <Link href="/service" className="w-fit">
+              <Link href="/services" className="w-fit">
                 Explore services <ArrowRight className="scale-75" />
               </Link>
             </Button>

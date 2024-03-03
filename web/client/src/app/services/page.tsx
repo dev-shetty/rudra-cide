@@ -49,7 +49,7 @@ export default function ServicePage() {
               User Finder
             </p>
             <p className="text-gray-400">
-              Find users on the dark web using keywords.
+              Find user aliases using Web Correlation, on clear net.
             </p>
           </div>
         </Link>
