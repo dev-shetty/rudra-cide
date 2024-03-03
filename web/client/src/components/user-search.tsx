@@ -12,14 +12,21 @@ export default function UserSearch() {
   const router = useRouter()
 
   async function handleSearch(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault()
     router.refresh()
     router.push(
-      `/finder/result?${new URLSearchParams({ username: user!, key: keyword! })}`
+      `/finder/result?${new URLSearchParams({
+        username: user!,
+        key: keyword!,
+      })}`
     )
   }
 
   return (
-    <form className="w-full flex items-center space-x-2" onClick={handleSearch}>
+    <form
+      className="w-full flex items-center space-x-2"
+      onSubmit={handleSearch}
+    >
       <SearchIcon className="w-4 h-4 opacity-50 mr-4" />
       <Input
         className="w-full flex-1"
