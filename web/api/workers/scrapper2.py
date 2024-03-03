@@ -12,25 +12,18 @@ import os
 onion_url = 'http://biblemeowimkh3utujmhm6oh2oeb3ubjw2lpgeq3lahrfr2l6ev6zgyd.onion/'
 
 options = Options()
-options.headless = False  # Run WebDriver in headless mode
+options.headless = False 
 options.binary_location = "C:\\Tor Browser\\Browser\\firefox.exe"
 options.set_preference('network.proxy.type', 1)
-options.set_preference('network.proxy.socks', '127.0.0.1') #defaults fault SOCKS port
-
+options.set_preference('network.proxy.socks', '127.0.0.1') 
 def download_html(url):
     try:
         driver = webdriver.Firefox(options=options)
         driver.get(url)
-        
-        # Wait until an element is present on the page (adjust timeout as needed)
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//body"))
         )
-        
-        # Get the HTML content of the page
         html = driver.page_source
-        
-        # Save the HTML content to a file
         shorten=onion_url.split('//')[1].split('.')[0]
         shorten=f"scrap/{shorten}.html"
         with open(shorten, "w", encoding="utf-8") as file:
@@ -39,13 +32,7 @@ def download_html(url):
             image_tag = soup.find('img')
             image_link = image_tag.get('src')
             print(image_link)
-            # Download the image
             driver.get(onion_url + image_link)
-
-
-            
-
-
     except TimeoutException as te:
         print("Timed out waiting for the page to load.")
     except WebDriverException as e:

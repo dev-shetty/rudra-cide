@@ -1,7 +1,8 @@
 
 import string, praw, time
 from config import REDDIT_API_CLIENT, REDDIT_API_SECRET
-print(REDDIT_API_CLIENT, REDDIT_API_SECRET)
+
+
 class Alias:
     def __init__(self):
         self.reddit = praw.Reddit(

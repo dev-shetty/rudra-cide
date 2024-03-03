@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>⭐⭐CHECK MANSORY ON ARCHETYP FOR THE BEST PRICES !!! ⭐LAB TESTED PRODUCTS!⭐Our speciality ;💎MDMA💎- 🔥COCAINE🔥- 💊XTC💊- KETAMINE- SPEED- 2CB- 3CMC🌎&amp; MORE&hellip; : /d/Archetyp - Dread</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/dread.css?refresh=2" type="text/css"/>
+	
+	</head><body>
+<div class="container">
+	<div class="jsWarning">
+    <input type="radio" name="popout_btn" value="open" checked/>
+    <input type="radio" name="popout_btn" value="close"/>
+
+    <div class="popout-bg"></div>
+
+    <div class="popout-box centered">
+        <div class="heading" style="color:red;">Warning!</div>
+        <p>You have JavaScript enabled, you are putting yourself at risk!</p>
+        <p>Please disable it immediately!</p>
+    </div>
+</div>
+
+<noscript>
+    <style>.jsWarning {
+            display: none !important;
+        }</style>
+</noscript>
+
+    <link rel="stylesheet"
+          href="/d/Archetyp/css?r=1947"
+          type="text/css">
+	
+    <input type="checkbox" name="toggleSidebar"/>
+	
+<header>
+
+    <div class="centerWrap">
+        <a href="/" class="dreadLogo">
+            <div class="square"></div>
+            <div class="text">dread</div>
+        </a>
+
+        <nav class="subdreadQuick">
+            <ul>
+                <li >
+                    <a href="/">frontpage</a></li>
+                <li ><a
+                            href="/d/all">all</a></li>
+                <li >
+                    <a href="/d/Dread">dread</a></li>
+				            </ul>
+        </nav>
+
+        <nav class="userNav">
+            <a href="/search/" class="searchBtn" alt="search"></a>
+
+            <form class="searchPop" method="get" action="/search/">
+                <input type="text" name="q" placeholder="Search"/>
+                <button class="sprite-search" type="submit"></button>
+            </form>
+
+			                <div class="no_auth">
+                    <div class="login_pop">
+                        <span>Login</span>
+                        <input type="radio" name="popout_btn" value="open"/>
+                        <input type="radio" name="popout_btn" value="close" checked/>
+
+                        <div class="popout-bg"></div>
+
+                        <div class="popout-box login">
+                            <form method="post" action="/auth/login/noload">
+                                <div class="inp">
+                                    <label>Username</label>
+                                    <input type="text" name="username" required/>
+                                </div>
+
+                                <div class="inp">
+                                    <label>Password</label>
+                                    <input type="password" name="password" required/>
+                                </div>
+
+                                <div class="inp">
+                                    <label>Stay logged in for</label>
+                                    <select name="session_expire">
+                                        <option value="1" selected>1 hour</option>
+                                        <option value="6">6 hours</option>
+                                        <option value="12">12 hours</option>
+                                        <option value="24">24 hours</option>
+                                        <option value="0">Forever</option>
+                                    </select>
+                                </div>
+                                <div class="logo-icon-large" style="display:none;">
+                                    <div class="lg-img"></div>
+                                </div>
+                                <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+
+								
+				<style>
+			
+						.decaptcha.decaptcha-

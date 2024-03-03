@@ -1,9 +1,7 @@
 # License: GNU General Public License v3.0
 
-import time, asyncio, os
+import time, asyncio, json
 from fastapi import APIRouter, Request, UploadFile, File, WebSocket
-from fastapi.responses import StreamingResponse
-import subprocess
 from workers.model import CrawlModel
 from pathlib import Path
 
@@ -24,51 +22,24 @@ def generate_yara_rule(keywords):
     return rule_template % strings_section
 
 
-def read_file():
+
+async def execute_command(command):
+    completed_process = await asyncio.create_subprocess_shell(" ".join(command))
+    await completed_process.wait()
+
+async def send_data_to_websocket(websocket):
     while True:
-        with open(f"../torcrawl/{data.url.split('/')[-1]}/result.txt", "r") as file:
-            data = file.read()
-            yield data
-        time.sleep(1)
-
-@router.post('/generate_html')
-async def generate_html(request: Request, data: CrawlModel):
-    try:
-        if not data or not data.url or not data.keywords:
-            return {'status': 'failed', 'message': 'Invalid input data', }
-        r = generate_yara_rule(data.keywords)
-        file_path = Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar"
-        with open(file_path, 'a') as f:
-            f.write(f"{r}\n")
-        v, c, d, p, e = True, True, 1, 1, True
-        print(data.url)
-        command = [
-            'python', 
-            'torcrawl.py', 
-            v and '-v', 
-            c and '-c', 
-            '-u', data.url, 
-            '-d', d, 
-            '-p', p, 
-            '-o', 'result.txt', 
-            e and '-e', 
-        ]
-        asyncio.create_task(subprocess.run(command))
-        return StreamingResponse(read_file(), media_type="text/plain")
-
-    except Exception as err:
-        print(err)
-    # finally:
-    #     await websocket.close()
-
+        data = await _read_file()
+        await websocket.send_text(data)  
+        await asyncio.sleep(1)
 
 @router.websocket("/generate_html")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     try:
-        dataRaw = websocket.receive_text()
-        data: CrawlModel = CrawlModel.parse_raw(dataRaw)
-        r = generate_yara_rule(data.keywords)
+        dataRaw = await websocket.receive_text()
+        data: CrawlModel = json.loads(dataRaw)
+        r = generate_yara_rule(data['keywords'])
         file_path = Path(Path(__file__).parent).parent / "torcrawl/res/keywords.yar"
         with open(file_path, 'a') as f:
             f.write(f"{r}\n")
@@ -76,19 +47,17 @@ async def websocket_endpoint(websocket: WebSocket):
         command = [
             'python', 
             'torcrawl.py', 
-            v and '-v', 
-            c and '-c', 
-            '-u', data.url, 
-            '-d', d, 
-            '-p', p, 
+            str(v) and '-v', 
+            str(c) and '-c', 
+            '-u', data['url'], 
+            '-d', str(d), 
+            '-p', str(p), 
             '-o', 'result.txt', 
-            e and '-e', 
+            str(e) and '-e', 
         ]
-        asyncio.create_task(subprocess.run(command))
-        while True:
-            data = await _read_file()
-            await websocket.send_text(data)  
-            await asyncio.sleep(1)
+        subprocess_task = asyncio.create_task(execute_command(command))
+        file_reading_task = asyncio.create_task(send_data_to_websocket(websocket))
+        await asyncio.gather(subprocess_task, file_reading_task)
     except Exception as e:
         print(f"WebSocket error: {e}")
     finally:
