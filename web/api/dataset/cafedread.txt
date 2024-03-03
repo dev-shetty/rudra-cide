@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lets talk a bout the elpehant in the room - drughub market : /d/CafeDread - Dread</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/dread.css?refresh=2" type="text/css"/>
+	
+	</head><body>
+<div class="container">
+	<div class="jsWarning">
+    <input type="radio" name="popout_btn" value="open" checked/>
+    <input type="radio" name="popout_btn" value="close"/>
+
+    <div class="popout-bg"></div>
+
+    <div class="popout-box centered">
+        <div class="heading" style="color:red;">Warning!</div>
+        <p>You have JavaScript enabled, you are putting yourself at risk!</p>
+        <p>Please disable it immediately!</p>
+    </div>
+</div>
+
+<noscript>
+    <style>.jsWarning {
+            display: none !important;
+        }</style>
+</noscript>
+
+    <link rel="stylesheet"
+          href="/d/CafeDread/css?r=1425"
+          type="text/css">
+	
+    <input type="checkbox" name="toggleSidebar"/>
+	
+<header>
+
+    <div class="centerWrap">
+        <a href="/" class="dreadLogo">
+            <div class="square"></div>
+            <div class="text">dread</div>
+        </a>
+
+        <nav class="subdreadQuick">
+            <ul>
+                <li >
+                    <a href="/">frontpage</a></li>
+                <li ><a
+                            href="/d/all">all</a></li>
+                <li >
+                    <a href="/d/Dread">dread</a></li>
+				            </ul>
+        </nav>
+
+        <nav class="userNav">
+            <a href="/search/" class="searchBtn" alt="search"></a>
+
+            <form class="searchPop" method="get" action="/search/">
+                <input type="text" name="q" placeholder="Search"/>
+                <button class="sprite-search" type="submit"></button>
+            </form>
+
+			                <div class="no_auth">
+                    <div class="login_pop">
+                        <span>Login</span>
+                        <input type="radio" name="popout_btn" value="open"/>
+                        <input type="radio" name="popout_btn" value="close" checked/>
+
+                        <div class="popout-bg"></div>
+
+                        <div class="popout-box login">
+                            <form method="post" action="/auth/login/noload">
+                                <div class="inp">
+                                    <label>Username</label>
+                                    <input type="text" name="username" required/>
+                                </div>
+
+                                <div class="inp">
+                                    <label>Password</label>
+                                    <input type="password" name="password" required/>
+                                </div>
+
+                                <div class="inp">
+                                    <label>Stay logged in for</label>
+                                    <select name="session_expire">
+                                        <option value="1" selected>1 hour</option>
+                                        <option value="6">6 hours</option>
+                                        <option value="12">12 hours</option>
+                                        <option value="24">24 hours</option>
+                                        <option value="0">Forever</option>
+                                    </select>
+                                </div>
+                                <div class="logo-icon-large" style="display:none;">
+                                    <div class="lg-img"></div>
+                                </div>
+                                <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+
+								
+				<style>
+			
+						.decaptcha.decaptcha-9028ddae44364a47>.decaptcha-thumb{background-image: url(data:image/jpeg;base64,UklGRrgQAABXRUJQVlA4IKwQAAAwUwCdASosAWQAPp1Cm0mlo6IkKxN9sLATiWUAy9jb+az9z4e+hYPu1L7f58+2HgIvT3MqeLKqZthr/lC1Bf199Nf2E/t57IX67IyAFnzyWIjtpIuPMgrT5ztDbBMUwdQn5LIo3EZfNeZFvTcRGFy1yjUUyTuZwZKAxXzrY1m8SkS9uYxrkMIJseQ/l4baZmoryenPPNyfam8GcA3/P9dFdCQu/6OtT7d8214Khq8G/dM78K9c8v+7VZXMNF1lAQ89MlyUzxD4G/tYSeB0kkKBfUTrQm/5VYVko1wbL5DSkX6qZoxH9EUBDirxXOo88Qn30ezjVQkaiceB7zCymDecWpl3rVW5qaUbd3cRAW6ntsAAMlmerXbUg28HokyP2/YIzFotMC3psd6anZf8NbsB3t3h5ILUIfdwADgg7TpysSJHFgeRoFgfP+5fV5Qwl9UsUOUVTVNEfT9ToZVOBCZ/1gXs/xsEB/6EiHrA/4Yncom2AVzwRT15fVN50vp7BH2IcIeZeGYz06FcjO0urx44+KI/tm9g9CGCEAJhjnJkJp9lLbs1MVtvpr1A0ncgb4f1AU70SV+riLlFyfSaj1E0vobWSBYVWd7gnsV4oyvxzMZPLRTDBQlzSOBNlwVqOIWGE8134kA83+VUhTIqS6a9EHhrq+afuMbGNmrTfmOptBVaLV0OgW/Rie/ENPBJIqHUvo4N8Sao9SfWx/m2x80mfzv6iwTF19R3BB+hscoKUyryN1dQZBdCmODrotqOXCuc3BPv3/7wbCMkSkpqFFmmFIkOsauDuHEGCQObFvcaGZ9zUa8KWr0XqhbuVONppATmbKrxkhu53F9TL6KSzmcEoNTzPv+FpGseT9jNmGTXwpYuwc5uFoEj1zgllBOvuUsQAAD+/obim1IeRMbK/z4oq2kVAxbxWnF/XRO5Rd8ytKYYF7Te/UdfbMHeANgSE+t5beIDCv8gcoEIQzbulPXxJGuTPN/CjKXHrx5qH7+HZL5OxHlgljCrJWklP96d24K4w4BtfxfvGLFH+9HIbENp7nd7ECNM0ztqi8B/zOQ2uGudV7BXWynqif1w8NgRjUAHsZV/ij9Tpitvd6ZABmYoxKs7zSTa3Esp2PNpO8QwhN7PkWpzC6e6lq8ipckufW5kpv7VrzQzY8AdXoeAlPx4HObZQKMjU2PaQJ1pUbzgMBvae9JC9aYfATfeY5om/myefOByGWd1YBv0fAkgEDzH6c0BwWOMEnaI8X0zo4DELXnD98e1bpEl/IjoXoF9ivbNccLEsI7hDChoyV+z9BaiCndY6BkoN2/N46psYDCsxWzDtCUTxsLJJOINQweE4PYW816rNmsz8TKKBRxofqVDpgXjZb6zTU0I3NR7QVaW5PvCynG5zuRoo7mPcb2kptxF2llCjLzsI7idXBRmlN+Q8k+05kL8h8YIlxxauVxkk1b6G+QlzX4GwoKjwuw+RjEz8xmc0C71Brs0Rv8NMC87mK7ykgeZ2LGa6zErkBXjaNvKTBAQ4TGwLquQfy/UAAdiB2Ro53Zw3KD+cvOrmxzxQUyxx7F9LyMcu6v5W9LnBOD/QtkLpa+SPykTfinFkoB0pxRrSFufrHCkhhCCJrVLM2vUIYt8vbxJlUZSZNOf8ujGQ7zVWYOuMo4Wu2o70pE+1A0QC2iUxGIXknXO5pTWXGaSGWhUxsVgNIiCe2nYu+qRUW2in1T0AYCi0TDKb0YRA7HC+TrWMLYtdmctaM10QxSnfHmnw9oSLIB7ptE2ALVw7NhNUjbdBu1dU8QRaSuk3ALKEZqmmyJ+vCiPo1uy220/Xjibp4NGr8auDS/bWrLBf5VkoUNJl6yEOY/TPCMb++eC1B3NmHQ9+RA+7aFqEp8DLnVaGtTQDqIqrAH6XZARy2hDoqsSQCIFs5+0tspYYVtsa5ldN/Wc8DnOJx7ggi4C1P+U3xUevxVkBFRgzZSWetYgimsRaZGOMsrqT+T38EtCTeUxrn7w8RDS4dsCD+uejyWI+t7kF6MDBYfEdhafeRuPSK0oVFnRefpCKe85yPT0Qru3c8JR30jipuW7M25BPn4eVEN1K+FOktia9ECoiB4lUD0+09PUQixP8ER1oUYS7lFteiXaj9ZvhV65coUFCh6e48Z9Zt+qeqYn4sIeYi6vT9Pcu2S3hCcElgnCKCkLQEdy69QLzTNl2+W+Igz8Dx7pcGR9GifXluwVqPpUzHG5AKv/DjR8bgaFQBoEypYoqv19azmcxsPVMd/xqu0x2AaCEB7YOQzYtcqb6VxVACxAMFZ05Ad2KtdbQIstQVxv/qUcm6KEKvsQPbmTTdQXz62GLD0kLNgR/dkEeMrZxKEr4l7w9+Bl/JNhPz91JEPdYd24vN/P7hj1WZp9pWbxq2ULXdHSo1PUWE3NJwAWl3IOYZ2aCNunNVxYfKYWrQhilADlP5GTozdj41C58Ccu2EIFuJhLMhMHxOWzac+Ehwm56nLt2opSjL7A5YNr4FevJMoy03pFbKaJGAIVI8Wdn61BOXVnazGHLCu5XDA47MaxzqEu3BLG1QfXXUNKnxRMd+4Qh/C1EbcSiFd+tTYyKAGlQ1cZVFOlb15OgKd4rVCyVwBcBsfIthebSwycq3OWxCD9H0+h8PeITGRzULzyZysYOTzhPjlY8ic/YlOtFQshJOhVyrFVU3ggVkV8Cm109UUfqui3Ky+8mCS153DhDeM4kSZTMm9H9XVs8zbdVB5sn3qikMwDshoH336pmAgDCOf5xwfkxWi0cqpIpPfUbwrCQAJ+DxaWOqAnIY52RRdeAHj6ONRGzuX1NUxpm8gwnOYykJJ/tG5shZJS49tg6Vf/8Pf/9DB7PQz3wHwjLnv6In9oojAYBvPNekVkzf5PY2T37VgwUVQgIGqgAwhKZqqdlp/HjFhYBILynhQWoovJbNVxDOtxjmMpa0SeaDLiFDqeUm6Hhav0O9KMxJArE7dXjmMlkqn22LU6EFYN9N/BIJH14PHwYgNYhF9R+AtGMTCcxYr0TCkxPx/uxiQxxF2meO+PEXLN2cTavYLz/7eqpdFXDjKxnAQnlzpRxVpSDVRAXzpPNxuthMe2D4CbxY7Q4AiRkT2LGco1W2fKApCCafDquluZZ1Kr1dQ+jTEAlwHs2eH3WNiRP3TAUgWSkiZEH8ZTN6ANlRVzSX6SFjw/Ahb9+gOVGCsqxPyjb9uWor/7JiYpOBsTlRGd5ThblHxUvYDXVOyGDx+0Lgt5kZt0KpXNFXvjpUaqCFkYw3pYpwX+6A6Mp+TJJGUB8nUIMGQC7Wes7u/+mPB/RJ2aLB4S5NSc5tGPJ6Nt9UhFcrb2BdqsOkDzrL5awiq/1gMAjbz8/SGUFMJQlc5LNYfGJtc2/CQaCGZQ2nuNY6+DKTdMiV6ECag43ZTapXE7ZrSUuWJuBsRF7aj6rpUwiAJ0OcPkLT4YHyXvyCzYUGp5dBBMuJ2YTDJyYbZK+GpV2rGUv+3c/AozcnLQpW6EBO2Gxb9K/YrJmIzF9ENZwCZkg+6eAP2bqxz7EBDYLCZAfm/Qa9XIk93ZEGPeKdSkc3u48ePlg7nZppngEzj7x/66bsMwMvAc5yuMP6UIoqFaqjVRPO9rpVY49nzZCIbIU6DuW8G5pPyzYya0hQaQlFRoqXTwNSxt5TsIZKbC3v4PfKXrua5ZptlseVy4x+BCm4DjeTrRxg9P48c2ZNYBLIXKQZN1wspBoCFIfJ81YUi0x8x0HBsVlrGXfzC8sMQaCvGkpB2XLnSgVprWzV/21+UVsBwOgiVghzhZ1gmphU5kJ/i+q681mTJhlTFnwyCLSu5ifvdb0f4dTqcmHVQVrN7NOnl5cyIgFyDItku2P4Id8em4gZlj0dC5ozZSloXHt71+ePsF8m+0Exk9qG9OVsdQTYJpEVXJZFtwZXs7Wi/aIxjlCFUYIg02ga6fCAFMXqFpuou14dE8hhpKDyfxUitsqTS4984635mg/dNabPjEz2uU/oeF0UDBnNbKLecLlFMNbV1dSk50/QnSZnbusitCmChmFS/MBpbUa6jgi1kcKs8UdqPFL5DyQ5K0IFEgwrqFNivUi8o25TBph67Yhl6toyd38sSICgdRXM4yPpLliXAww0P44oo0EhTeT0faBZPkgPQUVocinOuHiUB5P6L4JAJyu1/IJEnH8rqH7fOHPbmS7SRPEAhya587lWvUdamtTsiPPmATzUAlDviYATEmzm6nkKcEtR2CzSBGVWZC4Rfh5ZzD1J1BL2RoGJM5F5zfIq1fFGWvOinO3XI4+0B1nQYR8CaeRJOYwGBGAIChinzgBIuOSUgClbbTtt6FwPwCB27jJNQcMKCnVXvzXQEQQ5a/lspK9VMznpTCynHxCgH2R7ijDCksmMkVXmRH5vj269PlFS+/NsxG03wgPpGKLJsoggg7t6NDU3EMMwfpXOjZOA1UaxR2JMTrWb+hVpCiTC6ISCK2S3Vt+o6Svpv54DyUlsYqGJFuaym4VBK194kRDQmdcy6bMi4wGHMrOevAw6ulFcIH2uiWT5h3asEh2cbJDVHzzB0SgzdizDYPdEpew3Y2NheVlAqkN8LkCId7UwjMeo3FalXyFbeMFTEQChv3e0GMBnWqcqUiZGpzm5Hic4AsM8rbMKY4Fz+ryHp1q62IO6YrV49iLbaaPmXaOYZlM98xMy5a4CyOH+lUddrgZmyu4NJytFmmNSdh6N6XSO453FM3wuO3GKt+D8j8Og+nU8xxgory01CCGC71aEukjxFA/AWgLVXTdmStwlLvUhFZPrW1iTHfC4wuE7REiUZHEfdE7Gu1mEqK/vClkDxD1WKWzK8s9hrxrfb4ELK9zvHI1x396i4sKM6V7V9RjX7KyuHsds8dvfd1ZGoODFWKOVdScyYtlzAK5VwBMDDhJz9BoS0RaWTZeXbIZkAmaur55F2TGjaOuyvxq30Glidrajj5NH6dthVlfYevPsJYocay9/x/q7ACj2To8KnwoOkD4ImhdzrL0vvsF2E62ms3UC3Xhf2vTWfabM8rThiEbUbP6/YOo5LkmAV7WcCoBQhz1mmi3+CwcytS6sM1FP64q+IODJfwfO/LXWkSI7YL06CIh4gmnIbJbf77vx68r6nZo/xbEaB/7SqrGt4hXuHr0t3xeQf4s6DgkYwo1s/dfYibdLnjTY9UcTnaSTTwUYwn5UP/dk9jlk3AJ5JaB9At4QvsjbDKy2FEgHIdMUiPlXhmkMBQx9VQGrf5Zuxb3eI8vWFB5x5+LX2IT7Fh96iZuDNZMuK5qGzX0BH9aWVfJ8O0QklBTx6aVH+Yvs4HGs1YnN0Bgc2VW2TbDfcPkqN93ErH2UWMpLdgCRHcTUecIxnn+oKdbhHJN0sz+zA1ni5Ma+4c0sa6AAChIMQuQKETaDPPQB3uOdjFUp+nl4VEFH+5LX4hpmkuuSChfuwzSA7iyadLIR0lcSnT9o8ygjn1u4ENWaXvhZ6599GreALJC37+ioqhh+gBuYCGhfwOUHQ6vLe95DlL7A2sUlrlnVrvtNrXIxO6D023m8WIkG4+6eOYzVSVpT458kFpXQwgwhi7VLniqyIA9iACvhd/9t0Caz9+YdTsJzT4HUy2Rt7huEwrMyV3yrDuiwcwXApe8XJK35dtQvmsFxAAKoBi4z8TwoP8szAdFABVBa0BoBi9A2U8QS9wAAAAAA==);}
+				.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="1"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(51.428571428571deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="2"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(102.85714285714deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="3"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(154.28571428571deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="4"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(205.71428571429deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="5"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(257.14285714286deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="6"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(308.57142857143deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="7"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(360deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="8"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(411.42857142857deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="9"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(462.85714285714deg); }.decaptcha > input[type="radio"][name="captcha_answer[1]"][value="10"]:checked ~ .decaptcha-thumb.img-1 { transform: rotate(514.28571428571deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="1"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(51.428571428571deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="2"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(102.85714285714deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="3"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(154.28571428571deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="4"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(205.71428571429deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="5"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(257.14285714286deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="6"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(308.57142857143deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="7"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(360deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="8"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(411.42857142857deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="9"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(462.85714285714deg); }.decaptcha > input[type="radio"][name="captcha_answer[2]"][value="10"]:checked ~ .decaptcha-thumb.img-2 { transform: rotate(514.28571428571deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="1"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(60deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="2"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(120deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="3"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(180deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="4"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(240deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="5"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(300deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="6"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(360deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="7"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(420deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="8"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(480deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="9"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(540deg); }.decaptcha > input[type="radio"][name="captcha_answer[3]"][value="10"]:checked ~ .decaptcha-thumb.img-3 { transform: rotate(600deg); }
+				</style>
+			
+				<div class="decaptcha decaptcha-9028ddae44364a47">
+					<input type="checkbox" name="pointer_event" class="event" />
+					
+					<div class="decaptcha-ui">
+						<div class="query">
+							<div class="riddle">Rotate the images</div>
+						</div>
+					</div>
+			
+				<input type="checkbox" value="go-page-2" />
+				
+				<input type="radio" name="captcha_answer[1]" checked value="0" />
+			<input type="radio" name="captcha_answer[1]" value="1" /><input type="radio" name="captcha_answer[1]" value="2" /><input type="radio" name="captcha_answer[1]" value="3" /><input type="radio" name="captcha_answer[1]" value="4" /><input type="radio" name="captcha_answer[1]" value="5" /><input type="radio" name="captcha_answer[1]" value="6" /><input type="radio" name="captcha_answer[1]" value="7" /><input type="radio" name="captcha_answer[1]" value="8" /><input type="radio" name="captcha_answer[1]" value="9" /><input type="radio" name="captcha_answer[1]" value="10" />
+				<div class="decaptcha-thumb img-1"></div>
+				
+				<div class="decaptcha-btn rotate-1">Rotate</div>
+				<div class="decaptcha-btn reset-1">Reset</div>					
+				<div class="decaptcha-btn next-1">Next</div>
+				
+				<input type="radio" name="captcha_answer[2]" checked value="0" />
+			<input type="radio" name="captcha_answer[2]" value="1" /><input type="radio" name="captcha_answer[2]" value="2" /><input type="radio" name="captcha_answer[2]" value="3" /><input type="radio" name="captcha_answer[2]" value="4" /><input type="radio" name="captcha_answer[2]" value="5" /><input type="radio" name="captcha_answer[2]" value="6" /><input type="radio" name="captcha_answer[2]" value="7" /><input type="radio" name="captcha_answer[2]" value="8" /><input type="radio" name="captcha_answer[2]" value="9" /><input type="radio" name="captcha_answer[2]" value="10" />
+				<input type="checkbox" value="go-page-3" />
+				
+				<div class="decaptcha-thumb img-2"></div>
+				
+				<div class="decaptcha-btn rotate-2">Rotate</div>
+				<div class="decaptcha-btn reset-2">Reset</div>					
+				<div class="decaptcha-btn next-2">Next</div>
+				
+				<input type="radio" name="captcha_answer[3]" checked value="0" />
+			<input type="radio" name="captcha_answer[3]" value="1" /><input type="radio" name="captcha_answer[3]" value="2" /><input type="radio" name="captcha_answer[3]" value="3" /><input type="radio" name="captcha_answer[3]" value="4" /><input type="radio" name="captcha_answer[3]" value="5" /><input type="radio" name="captcha_answer[3]" value="6" /><input type="radio" name="captcha_answer[3]" value="7" /><input type="radio" name="captcha_answer[3]" value="8" /><input type="radio" name="captcha_answer[3]" value="9" /><input type="radio" name="captcha_answer[3]" value="10" />
+				<div class="decaptcha-thumb img-3"></div>
+				
+				<div class="decaptcha-btn rotate-3">Rotate</div>
+				<div class="decaptcha-btn reset-3">Reset</div>
+			
+					<div class="init-ui">
+						<div class="text">I am not a bot</div>
+						<div class="check"><div class="spinner"></div></div>
+					</div>
+				</div>
+			
+                                <button type="submit" class="standardBtn" name="sendLogin">Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+                    or <a href="/auth/register">Register</a>
+                </div>
+				                <div class="iconLink sidebar">
+                    <span class="sprite-nav-sidebar"></span>
+                </div>
+				        </nav>
+    </div>
+</header>
+    <div class="content no-top">
+		
+		
+<div class="subBanner" style="">
+    <a href="/d/CafeDread" class="banner-top"
+       style="color:#ffffff;">/d/CafeDread</a>
+
+	        <div class="banner-menu">
+			                <a href="/d/CafeDread/wiki?id=ff06c8ad">Rules of Enragement</a>
+				                <a href="/d/CafeDread/wiki?id=f4e749a6">Onion Search Engines</a>
+				                <a href="/d/CafeDread/wiki?id=6c736105">Honorable Posts</a>
+				                <a href="/d/CafeDread/wiki?id=c2afa5ef">PsyCare Server</a>
+				        </div>
+		</div>
+
+<div class="sub_mobile_menu">
+    <div class="subscriber_count">22,945 subscribers</div>
+
+    <div class="action_buttons">
+        <form method="post" action="/d/CafeDread">
+            <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+            <input type="hidden" name="sub_key" value="CafeDread"/>
+
+			                <a href="/auth/login" class="standardBtn">Subscribe</a>
+				
+			                <a href="/d/CafeDread/post/" class="standardBtn">Submit a post</a>
+				
+			
+			        </form>
+    </div>
+</div>
+        <div class="postBoard viewPost">
+			                <div class="item">
+					    <form method="post" class="voting ">
+        <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+        <input type="hidden" name="post_key" value="bfdb4e6e3ed7352a3152"/>
+
+		            <a href="/auth/login" name="vote_up"></a>
+		
+		            <div class="voteCount">1</div>
+			
+		            <a href="/auth/login" name="vote_down"></a>
+		    </form>
+
+	
+					
+                    <div class="postTop">
+                        <a href="/post/bfdb4e6e3ed7352a3152"
+                           class="title">Lets talk a bout the elpehant in the room - drughub market                             </a>
+                        <div class="author">by <a
+                                    href="/u/treblex">/u/treblex  </a>
+                            &bull; <span
+                                    title="2nd March, 2024 12:59">2 hours ago</span><span title="Edited 2 hours ago">*</span>                            in
+                            <a href="/d/CafeDread">/d/CafeDread</a>
+                        </div>
+
+						                    </div>
+
+                    <div class="postMain">
+                        <div class="postContent">
+							Now don't get me wrong, WHM was great market, but don't go with the excuse that they didn't scam some of the vendors in the end. No, they did not pay everybody, even though the &quot;time frame&quot; was correct. This can be confirmed by a lot of people and it was discussed over and over again after the end of WHM.<br />
+<br />
+Drughub have legal claim that they were part of WHM, it's great - WHM was great market, but they did performed semi exit scam. One red dot for them... but here is another...<br />
+<br />
+ Why are they paying known scammers and pedo supporters as onionland and tordex for advertisement? These two search engines are literally the main core for scamming and pedophiles, everything starts from there, why would any market want to be involved in advertising there? <br />
+<br />
+Just open the search engines and see for yourself, tens of banners leading to scams and pedo websites, all runned by the same administrators and amongst them who you would see... oh yeah - drughub... the fuck?                        </div>
+
+                        <form method="post" class="actions">
+                            <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/> <input type="hidden"
+                                                                                              name="post_key"
+                                                                                              value="bfdb4e6e3ed7352a3152"/>
+
+                            <a href="/post/bfdb4e6e3ed7352a3152">4                                comments</a>
+
+
+							                        </form>
+                    </div>
+                </div>
+				        </div>
+
+        <div class="addComments">
+			                <div class="title">Comments</div>
+						        </div>
+
+		            <div class="filterSettings">
+                <div class="sort">
+                    <span class="icon"></span>
+                    <span class="label">Sort comments by</span>
+                    <div class="selector">
+                        <div class="selected">Top</div>
+                        <div class="dropdown">
+							                                <a href="?sort=new">New</a>
+								                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="postComments">
+				
+						<div class="comment" id="c-836bb3000f2ccbdd32">
+							<input type="checkbox" name="toggleThread"  value="1" />
+							
+							<div class="toggle"></div>    <form method="post" class="voting comment-vote">
+        <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+        <input type="hidden" name="comment_key" value="836bb3000f2ccbdd32"/>
+
+		            <a href="/auth/login" name="vote_up"></a>
+		
+		
+		            <a href="/auth/login" name="vote_down"></a>
+		    </form>
+
+	
+							<div class="commentContent">
+								<div class="top">
+									<a href="/u/Hourglass" class="username">/u/Hourglass   <span class="flair" style="background-color:#9B59B6;color:#fff;" title="Premium Member">P</span>  </a>
+									<div class="votes">2 points</div>
+									<div class="timestamp"><span title="2nd March, 2024 - 13:11">2 hours ago</span></div>
+					
+								</div>
+								<div class="commentBody">This is gonna be an interesting thread...<br />
+<a href="/u/Drughub">/u/Drughub</a></div></div>
+						</div>
+					
+						<div class="comment" id="c-4c38d7dee80f750eb5">
+							<input type="checkbox" name="toggleThread"  value="1" />
+							
+							<div class="toggle"></div>    <form method="post" class="voting comment-vote">
+        <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+        <input type="hidden" name="comment_key" value="4c38d7dee80f750eb5"/>
+
+		            <a href="/auth/login" name="vote_up"></a>
+		
+		
+		            <a href="/auth/login" name="vote_down"></a>
+		    </form>
+
+	
+							<div class="commentContent">
+								<div class="top">
+									<a href="/u/NorthenCorridor" class="username">/u/NorthenCorridor   <span class="flair" style="background-color:#9B59B6;color:#fff;" title="Premium Member">P</span>  </a>
+									<div class="votes">2 points</div>
+									<div class="timestamp"><span title="2nd March, 2024 - 14:54">1 hour ago</span></div>
+					
+								</div>
+								<div class="commentBody">ooooo im getting snacks and pop corn for this one lmao</div></div>
+						<div class="comment" id="c-e0438d81c95b0a4cb2">
+							<input type="checkbox" name="toggleThread"  value="1" />
+							
+							<div class="toggle"></div>    <form method="post" class="voting comment-vote">
+        <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+        <input type="hidden" name="comment_key" value="e0438d81c95b0a4cb2"/>
+
+		            <a href="/auth/login" name="vote_up"></a>
+		
+		
+		            <a href="/auth/login" name="vote_down"></a>
+		    </form>
+
+	
+							<div class="commentContent">
+								<div class="top">
+									<a href="/u/notimetothink" class="username">/u/notimetothink     </a>
+									<div class="votes">1 points</div>
+									<div class="timestamp"><span title="2nd March, 2024 - 15:22">35 minutes ago</span></div>
+					
+								</div>
+								<div class="commentBody">same shit but i just dont get wtf is going on</div></div>
+						</div>
+					
+						</div>
+					
+						<div class="comment" id="c-1706f3e1f9ba2214f4">
+							<input type="checkbox" name="toggleThread"  value="1" />
+							
+							<div class="toggle"></div>    <form method="post" class="voting comment-vote">
+        <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+        <input type="hidden" name="comment_key" value="1706f3e1f9ba2214f4"/>
+
+		            <a href="/auth/login" name="vote_up"></a>
+		
+		
+		            <a href="/auth/login" name="vote_down"></a>
+		    </form>
+
+	
+							<div class="commentContent">
+								<div class="top">
+									<a href="/u/HugBunter" class="username">/u/HugBunter   <span class="flair" style="background-color:#e74c3c;color:#fff;" title="Dread Admin">A</span> <span class="flair" style="background-color:#ff131d;color:#ffffff;">ssassin</span> </a>
+									<div class="votes">1 points</div>
+									<div class="timestamp"><span title="2nd March, 2024 - 14:45">1 hour ago</span></div>
+					
+								</div>
+								<div class="commentBody">Is it time I clear the air on this a little without going into any sensitive details?<br />
+<br />
+<a href="/u/Paris">/u/Paris</a> <a href="/u/DarkDotFail">/u/DarkDotFail</a></div></div>
+						</div>
+					            </div>
+
+						
+		<footer>
+    <div class="centerWrap">
+        <a href="/" class="dreadLogo">
+            <div class="sprite-dread-icon square"></div>
+            <div class="text">dread</div>
+        </a>
+
+        <div class="columns">
+            <div class="item">
+                <div><a href="/page/about/">What is dread?</a></div>
+                <div><a href="/updates/">Updates</a></div>
+                <div><a href="/page/harm-reduction/">Harm Reduction</a></div>
+                <div><a href="/ad/">Advertise</a></div>
+                <div><a href="/d/Dread/message/">Contact us</a></div>
+            </div>
+            <div class="item">
+                <div><a href="/page/rules/">Site rules</a></div>
+                <div><a href="/page/donate/">Donate</a></div>
+                <div><a href="/page/privacy/">Privacy</a></div>
+                <div><a href="/page/dreadiquette/">Dreadiquette</a></div>
+                <div><a href="/page/marketstandards/">Market Standards</a></div>
+            </div>
+            <div class="item">
+                <div><a href="/store/">Store</a></div>
+                <div><a href="/leaderboard/">Top Donators</a></div>
+                <div><a href="/theme/night?token=15ec67c0a8e37ecc">Night mode</a></div>
+				                    <div><a target="_blank"
+                            href="http://recon222tttn4ob7ujdhbn3s4gjre7netvzybuvbq2bcqwltkiqinhad.onion/?dcapset=7a35H0yc9sFYEPt82Fg3BwMYdYyHhWscDlphIiz9w9/KrEqXqpMCRGPUxuRBcGGYNMQw50EA3NQpOLOkmj7ZGUkomW8j35zfVDtaMHNqXYxRzub8IzlouJWW6uSvsALYT3D62UHd8YPjT4cG4rNjNPfeCFfXX3FiPLzThw==">Recon</a>
+                    </div>
+				                <div><a href="/page/canary/">Canary</a></div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="/css/adsprite.css?refresh=2609" type="text/css"/>
+    </div>
+</footer>
+    </div>
+
+	<div class="dreadSidebar">
+	
+<div class="sub-header">
+    <a href="/d/CafeDread" class="subicon" style="background-color:#2980b9;"></a>
+    <a href="/d/CafeDread" class="subname">/d/CafeDread</a>
+    <div class="subscribers">22,945 subscribers</div>
+</div>
+
+<form method="post" action="/d/CafeDread">
+    <input type="hidden" name="_token" value="15ec67c0a8e37ecc"/>
+    <input type="hidden" name="sub_key" value="CafeDread"/>
+
+	        <a href="/auth/login" class="standardBtn">Subscribe</a>
+		
+	        <a href="/d/CafeDread/post/" class="standardBtn">Submit a post</a>
+		
+	
+	</form>
+
+<div class="sub-description"><div class="post-table"><table style="width:100%;display:inline-table;border:#333333 solid 1px;background:#f2f2f2"><th cellpadding="10" valign="top">　☕️ 🧅 <span style="color: #8F46AE;">Ⓒⓐⓕⓔ Ⓓⓡⓔⓐⓓ</span> 🧅 ☕️</th></table></div><div class="post-table"><table style="width:100%;display:inline-table;border:#333333 solid 1px;background:#f2f2f2"><td cellpadding="10" valign="top">͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;　　　⭐ Dread's #1 SUB ⭐</td></table></div><div class="post-table"><table style="width:100%;display:inline-table;border:#333333 solid 1px;background:#f2f2f2"><br />
+<td cellpadding="10" valign="top">    　 ⭐ 5 YEARS RUNNING!!  ⭐</td></table></div><pre>WELCOME BACK EVERYONE!!</pre><br />
+ALMONDS..CAN NOT..BE..MILKED..<br />
+What about kittens?</div>
+
+<div class="bannerSection"><a href="/ad/b19ef61a9915442f7a6161dfa29fd9" target="_blank" class="item"><div class="ad-b19ef61a9915442f7a6161dfa29fd9" title="Rambouk2uk 4 years Serving you"></div></a><a href="/ad" class="link">Advertise here</a><a href="/ad/all" style="padding-left: 48%;" class="link">View All</a></div>
+
+<div class="sect">
+    <div class="heading icon mods">Moderators </div>
+
+    <div class="mod-list">
+		            <div class="item">
+                <a href="/u/Shakybeats"
+                   class="username">/u/Shakybeats <span class="flair" style="background-color:#2ecc71;color:#fff;" title="Dread Moderator">M</span> </a>
+            </div>
+			            <div class="item">
+                <a href="/u/darkdirect"
+                   class="username">/u/darkdirect  <span class="flair" style="background-color:#00ff08;color:#000000;">dark dick direct</span></a>
+            </div>
+			            <div class="item">
+                <a href="/u/hydronerd"
+                   class="username">/u/hydronerd  <span class="flair" style="background-color:#000000;color:#00ffd3;">Street Vendor 🌮</span></a>
+            </div>
+			            <div class="item">
+                <a href="/u/TTTz"
+                   class="username">/u/TTTz  <span class="flair" style="background-color:#474747;color:#06ff00;">Ⓜ️ Looking for Twerk</span></a>
+            </div>
+			    </div>
+
+    <a href="/d/CafeDread/message/" class="standardBtn">Message the Mods</a>
+</div>
+
+<div class="created">Created by <a
+            href="/u/LyinEyes">/u/LyinEyes</a>
+    <span>(5 years ago)</span></div>
+	
+</div></div>
+</body>
+</html>
