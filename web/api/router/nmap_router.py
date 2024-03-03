@@ -8,7 +8,7 @@ from workers.nmap import nmap_onion_scan
 router = APIRouter()
 
 @router.post("/")
-async def model(req: Request, res: Response):
+async def nmap(req: Request, res: Response):
     try:
         req = json.loads(req.body)
         result = await nmap_onion_scan(req.url)

@@ -10,7 +10,7 @@ from workers.model import ImageModel
 router = APIRouter()
 
 @router.post("/list-image-exif")
-async def image_exif(request: Request, data: ImageModel):
+async def list_image_exif(request: Request, data: ImageModel):
     try:
         metadata = []
         img = data.img
@@ -20,8 +20,12 @@ async def image_exif(request: Request, data: ImageModel):
             os.makedirs(img_output, exist_ok=True)
         except Exception:
             pass
+        proxies = {
+            'http': 'socks5h://127.0.0.1:9050',
+            'https': 'socks5h://127.0.0.1:9050'
+        }
         for url in img:
-            response = requests.get(url)
+            response = requests.get(url) #proxies=proxies)
             if response.status_code == 200:
                 file_name = os.path.join(f"{img_output}/{url.split('/')[-1]}", os.path.basename(url))
                 with open(file_name, 'wb') as file:

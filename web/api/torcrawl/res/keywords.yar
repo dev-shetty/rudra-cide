@@ -74,3 +74,30 @@ rule email_filter
             any of them
     }
     
+
+    rule detect_keywords
+    {
+        strings:
+            	${keyword0} = "drug" ascii nocase
+        condition:
+            any of them
+    }
+    
+
+    rule detect_keywords
+    {
+        strings:
+            	${keyword0} = "drug" ascii nocase
+        condition:
+            any of them
+    }
+    
+
+    rule detect_keywords
+    {
+        strings:
+            	${keyword0} = "drug" ascii nocase
+        condition:
+            any of them
+    }
+    
