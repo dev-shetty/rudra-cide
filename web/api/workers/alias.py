@@ -1,13 +1,14 @@
 
 import string, praw, time
 from config import REDDIT_API_CLIENT, REDDIT_API_SECRET
-
+print(REDDIT_API_CLIENT, REDDIT_API_SECRET)
 class Alias:
     def __init__(self):
         self.reddit = praw.Reddit(
             client_id=REDDIT_API_CLIENT,
             client_secret=REDDIT_API_SECRET,
-            user_agent='Rudra-CIDE by /u/Neat_Task4167'
+            user_agent='Rudra-CIDE by /u/Neat_Task4167',
+            check_for_async=False
         )
         self.found = {}
 
@@ -38,6 +39,7 @@ class Alias:
     async def check_reddit_data(self, username, key):
         try:
             posts = self.reddit.redditor(username).submissions.new(limit=None)
+            time.sleep(1)
             data = {}
             data['username'] = username
             data['posts'] = []
@@ -51,6 +53,7 @@ class Alias:
                     }
                     data['posts'].append(post_data)
             comments = self.reddit.redditor(username).comments.new(limit=None)
+            time.sleep(1)
             for comment in comments:
                 if key in comment.body:
                     comment_data = {
@@ -60,11 +63,12 @@ class Alias:
                     data['comments'].append(comment_data)
             return {'success': True,  'data': data}
         except Exception as e:
+            print(e)
             return {'success': False }
 
 
-alias = Alias()
-# print(alias.check_reddit('Lonely_Spell9563', 'buy'))
-print(alias.check_reddit_data('Lonely_Spell9563', 'buy'))
+# alias = Alias()
+# # print(alias.check_reddit('Lonely_Spell9563', 'buy'))
+# print(alias.check_reddit_data('Lonely_Spell9563', 'buy'))
 
 

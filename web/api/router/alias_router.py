@@ -12,7 +12,7 @@ router = APIRouter()
 async def alias_user(request: Request, data: AliasModel):
     try:
         alias = Alias()
-        output = await alias.check_reddit_data(data.user, data.key)
+        output = await alias.check_reddit_data(data.username, data.key)
         return JSONResponse(output)
     except Exception as e:
         return JSONResponse({ "success": False, "message": f"Error: {e}"})

@@ -1,14 +1,16 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-KEY = os.environ.get('KEY')
+KEY = os.getenv('KEY')
 
 # Redis 
-REDIS_HOST = os.environ.get('REDIS_HOST')
-REDIS_PORT = os.environ.get('REDIS_PORT')
-REDIS_DB = os.environ.get('REDIS_DB')
+REDIS_HOST = os.getenv('REDIS_HOST')
+REDIS_PORT = os.getenv('REDIS_PORT')
+REDIS_DB = os.getenv('REDIS_DB')
 
 # Reddit
-REDDIT_API_CLIENT = ""
-REDDIT_API_SECRET = ""
+REDDIT_API_CLIENT = os.getenv('REDDIT_API_CLIENT')
+REDDIT_API_SECRET = os.getenv('REDDIT_API_SECRET')
 
-OPEN_API_KEY = os.environ.get('OPEN_API_KEY')
+OPEN_API_KEY = os.getenv('OPEN_API_KEY')
